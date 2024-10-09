@@ -4,7 +4,7 @@
 
 This Lab guides you through the Analytics Rule part in Microsoft
 Sentinel, and shows you how to create different type of rules (Security
-Detections).
+Detections)</kbd>.
 
 ## Prerequisites
 
@@ -14,43 +14,36 @@ your Microsoft Sentinel instance.
 
 ## Task 1: Analytics Rules overview
 
-1.  In the browser tab navigate to the Azure Portal
-    [**http://portal.azure.com**](http://portal.azure.com) and search
-    for **Microsoft Sentinel** and click on **Microsoft Sentinel**.
+1.  In the browser tab navigate to the Azure Portal ```http://portal.azure.com``` and search for ```Microsoft Sentinel``` and click on **Microsoft Sentinel**.
 
-![A screenshot of a computer Description automatically
-generated](./media/image1.png)
+    <kbd>![](./media/image1.png)</kbd>
 
 1.  Select **MicrosoftSentinelWorkspace**.
 
-    ![A screenshot of a computer Description automatically
-    generated](./media/image2.png)
+    <kbd>![ computer ](./media/image2.png)</kbd>
 
 2.  On the left menu navigate to **Analytics** and select **Rule
     template** section
 
-![](./media/image3.png)
+    <kbd>![](./media/image3.png)</kbd>
 
 3.  Click on Rule templates tab and review the default analytics rules
     templates, then click on **Add filter** then select **Data
     Sources**.
 
-![A screenshot of a computer Description automatically
-generated](./media/image4.png)
+    <kbd>![ computer ](./media/image4.png)</kbd>
 
 4.  Check **Security Events via Legacy Agents**, select **Apply**. Now
     review all the analytic rules on the above data source.
 
-![](./media/image5.png)
+    <kbd>![](./media/image5.png)</kbd>
 
-![A screenshot of a computer Description automatically
-generated](./media/image6.png)
+    <kbd>![ computer ](./media/image6.png)</kbd>
 
 5.  In the rule search bar type **Anomalous RDP Login** for the rule
     name. Select the rule and open the side panel.
 
-![A screenshot of a computer Description automatically
-generated](./media/image7.png)
+    <kbd>![ computer ](./media/image7.png)</kbd>
 
 6.  To review the rule logic and possible configuration options, in the
     right lower corner press **Create rule**.
@@ -58,19 +51,17 @@ generated](./media/image7.png)
     **Note** - If the Create rule button does not appear, ensure the
     panel is enabled from the right side of the screen.
 
-![A screenshot of a computer Description automatically
-generated](./media/image8.png)
+    <kbd>![ computer ](./media/image8.png)</kbd>
 
 7.  Review the rule definition like tactics and severity. Press **Next:
     Automated response** in the bottom of the page.
 
-![](./media/image9.png)
+    <kbd>![](./media/image9.png)</kbd>
 
 8.  On the Automated response tab, click on **+ Add new** to create new
     Automation rule by referring to the image shown below.
 
-![A screenshot of a computer Description automatically
-generated](./media/image10.png)
+    <kbd>![ computer ](./media/image10.png)</kbd>
 
 9.  After you reviewed the rule configuration options, close this page
     and navigate back to the main **Microsoft Sentinel Overview**
@@ -89,13 +80,12 @@ option to help the analyst deal with alert fatigue.
     **Analytics** section click on **+Create** and select **Microsoft
     incident creation rule**.
 
-![A screenshot of a computer Description automatically
-generated](./media/image11.png)
+    <kbd>![ computer ](./media/image11.png)</kbd>
 
 10. In the rule name enter "**Defender for Cloud only medium and high
     Alerts**".
 
-    ![](./media/image12.png)
+    <kbd>![](./media/image12.png)</kbd>
 
 11. In the Microsoft security service dropdown select **Microsoft**
     **Defender for Cloud**.
@@ -105,24 +95,23 @@ generated](./media/image11.png)
 
 13. Click on **Next: Automated response**.
 
-![](./media/image13.png)
+    <kbd>![](./media/image13.png)</kbd>
 
 14. In the above **"Automated response"** page you can attach automation
     rule that can generate automation tasks that can assist your SOC
     with repetitive tasks, or Security remediation. Click on **Next:
     Review + create**.
 
-![](./media/image14.png)
+    <kbd>![](./media/image14.png)</kbd>
 
 15. On the Review + create page, click on the Save button.
 
-![](./media/image15.png)
+    <kbd>![](./media/image15.png)</kbd>
 
 16. Stay on the **Analytics** page and continue to the next
     **Exercise**.
 
-    ![A screenshot of a computer Description automatically
-    generated](./media/image16.png)
+    <kbd>![ computer ](./media/image16.png)</kbd>
 
 ## Task 3: Reviewing Microsoft Sentinel incident tools and capabilities.
 
@@ -137,23 +126,22 @@ rule** in Microsoft Sentinel.
 1.  In the analytics page on **Rule templates** tab, click **Add
     filter** and select **Rule Type**
 
-    ![A screenshot of a computer Description automatically
-    generated](./media/image17.png)
+    <kbd>![ computer ](./media/image17.png)</kbd>
 
 2.  Select the check box for **Fusion** and then click on **Apply**.
 
-![](./media/image18.png)
+    <kbd>![](./media/image18.png)</kbd>
 
 17. In the template screen notice the status as Enabled as this rule
     template enabled by default.
 
-![](./media/image19.png)
+    <kbd>![](./media/image19.png)</kbd>
 
 18. From the detail panel, review the details for the **Advanced
     Multistage Attack Detection** rule . Stay on the same page for next
     exercise.
 
-![](./media/image20.png)
+    <kbd>![](./media/image20.png)</kbd>
 
 As Fusion rules produce security incidents with high fidelity and
 simulation can be challenging, we are adding an example of an incident
@@ -168,13 +156,11 @@ stich together into high severity incidence:
 1.  In the left menu click on the **Logs** close the pop-up and navigate
     to the search **Canvas**.
 
-**Note**: in this lab we are using custom logs that replace the
-Out-off-the-box tables.
+    > **Note**: in this lab we are using custom logs that replace the Out-off-the-box tables.
 
-![A screenshot of a computer Description automatically
-generated](./media/image21.png)
+    <kbd>![](./media/image21.png)</kbd>
 
-![](./media/image22.png)
+    <kbd>![](./media/image22.png)</kbd>
 
 19. To check if this operations are being captured as part of your
     collection strategy, run the search query below to see the list of
@@ -185,13 +171,12 @@ generated](./media/image21.png)
 20. You will be able to see the **New-InboxRule** operation is indeed
     captured in your logs.
 
-![](./media/image23.png)
+    <kbd>![](./media/image23.png)</kbd>
 
 21. Navigate to the **Analytics** from the navigation bar. In the top
     bar click on **+Create** and select **scheduled query Rule**.
 
-![A screenshot of a computer Description automatically
-generated](./media/image24.png)
+    <kbd>![ computer ](./media/image24.png)</kbd>
 
 22. On the **Analytics rule wizard - Create a new Scheduled rule** page,
     provide the below details.
@@ -208,8 +193,7 @@ generated](./media/image24.png)
 
     - Click **Next: SET rule logic\>**.
 
-![A screenshot of a computer Description automatically
-generated](./media/image25.png)
+    <kbd>![ computer ](./media/image25.png)</kbd>
 
 23. In the **Rule logic** page, review and copy the query from the file
     **Lab3_analytics_rule_query.txt** given in **C:\Labfiles\\**
@@ -217,31 +201,28 @@ generated](./media/image25.png)
 24. We can view the rule creation estimating by pressing **Test with
     current data** in the right side.
 
-![A screenshot of a computer Description automatically
-generated](./media/image26.png)
+    <kbd>![ computer ](./media/image26.png)</kbd>
 
 25. You will be able to see the number of hits.
 
-![A screenshot of a graph Description automatically
-generated](./media/image27.png)
+    <kbd>![ graph ](./media/image27.png)</kbd>
 
 26. Under the **Alert enrichment** expand the **Entity mapping** section
     that will allow us to map our fields to well-known categories:
 
-![A screenshot of a computer Description automatically
-generated](./media/image28.png)
+    <kbd>![ computer ](./media/image28.png)</kbd>
 
 - In the **Entity type** open the supported list of entities and
   select **Account**.
 
-  ![A screenshot of a computer Description automatically
-  generated](./media/image29.png)
+      <kbd>![ computer Description automatically
+  generated](./media/image29.png)</kbd>
 
 - From the **Identifier** dropdown menu select **FullName** and from
   **Value** drop down menu select **UserId\_\_s.**
 
-  ![A screenshot of a computer Description automatically
-  generated](./media/image30.png)
+      <kbd>![ computer Description automatically
+  generated](./media/image30.png)</kbd>
 
 - Click **+ Add new entity** and this time select **Host** entity. From
   **Identifier** dropdown menu select **FullName** and from **Value**
@@ -251,8 +232,7 @@ generated](./media/image28.png)
   menu, in the **Identifier** select **Address** and for **Value**
   select **ClientIPAddress** value.
 
-![A screenshot of a computer Description automatically
-generated](./media/image31.png)
+    <kbd>![ computer ](./media/image31.png)</kbd>
 
 27. Expand the **Alert details** feature and create custom **Alert Name
     Format.**
@@ -260,23 +240,20 @@ generated](./media/image31.png)
 - In the **Alert Name Format** enter the dynamic title **"Malicious
   Inbox Rule, affected user {{UserId\_\_s}}"**
 
-![A screenshot of a computer Description automatically
-generated](./media/image32.png)
+    <kbd>![ computer ](./media/image32.png)</kbd>
 
 28. Scroll down and in the **Query scheduling** set the **run query
     every** to **5 minutes** and the **Lookup data to last 12
     Hours** (This scheduling might not be ideal for production
-    environment and should be tune). If you deployed the lab more than
+    environment and should be tune)</kbd>. If you deployed the lab more than
     12 hours ago, you will need to change the lookback period.
 
-    ![A screenshot of a computer Description automatically
-    generated](./media/image33.png)
+        <kbd>![ computer ](./media/image33.png)</kbd>
 
 29. In the **Suppression** leave it to **Off**. Click
     the **Next:Incident settings**\>.
 
-![A screenshot of a computer Description automatically
-generated](./media/image34.png)
+    <kbd>![ computer ](./media/image34.png)</kbd>
 
 30. To reduce the number of alerts, **implement Alert
     grouping** feature. To do so, follow the steps below:
@@ -291,22 +268,19 @@ generated](./media/image34.png)
   entity types and details matches** and select the **Account** and
   Alert detail as **Name**.
 
-![](./media/image35.png)
+    <kbd>![](./media/image35.png)</kbd>
 
 31. Click on **Next: Automated response** and also
     press **Next:Review** and **Create** this newly analytics rule.
 
-    ![A screenshot of a computer Description automatically
-    generated](./media/image36.png)
+        <kbd>![ computer ](./media/image36.png)</kbd>
 
 32. On the **Review + create** tab, review the details and then click on
     **Save** button.
 
-![A screenshot of a computer Description automatically
-generated](./media/image37.png)
+    <kbd>![ computer ](./media/image37.png)</kbd>
 
-![A screenshot of a computer Description automatically
-generated](./media/image38.png)
+    <kbd>![ computer ](./media/image38.png)</kbd>
 
 ## Task 5: Review resulting security incident
 
@@ -319,228 +293,196 @@ analytics rule.
     any incidents. Set the time span for **Last 30 days** from the top
     bar.
 
-![A screenshot of a computer Description automatically
-generated](./media/image39.png)
+    <kbd>![ computer ](./media/image39.png)</kbd>
 
 33. Locate a new incident with title **"Malicious Inbox Rule, affected
     user <AdeleV@contoso.OnMicrosoft.com>"** notice that the name adapt
     and the effected user name added to the incident name.
 
-![A screenshot of a computer Description automatically
-generated](./media/image40.png)
+    <kbd>![ computer ](./media/image40.png)</kbd>
 
 34. In the right pane we can review the incident preview, this view will
     gave us high level overview on the incident and the entity that
     related to it.
 
-![A screenshot of a computer Description automatically
-generated](./media/image41.png)
+    <kbd>![ computer ](./media/image41.png)</kbd>
 
 35. Click on the "**view full details**".
 
-![A screenshot of a computer Description automatically
-generated](./media/image42.png)
+    <kbd>![ computer ](./media/image42.png)</kbd>
 
 36. In the incident full details page you are able to see **Incident
     timeline** (effective when you have more than one alert in a given
-    incident).
+    incident)</kbd>.
 
-![](./media/image43.png)
+    <kbd>![](./media/image43.png)</kbd>
 
 37. Click on the Entities tab to review the names of the Entities
     associated with the incident.
 
-![A screenshot of a computer Description automatically
-generated](./media/image44.png)
+    <kbd>![ computer ](./media/image44.png)</kbd>
 
 38. Click on the entity **"<AdeleV@contoso.OnMicrosoft.com>"** and then
     click on **View full details** button.
 
-![A screenshot of a computer Description automatically
-generated](./media/image45.png)
+    <kbd>![ computer ](./media/image45.png)</kbd>
 
 39. This action will navigate us to the user entity page, this page will
     give us holistic view on the user entity, with all its activity and
     related alerts. Ensure to select the time to be more than **Last 14
     Days**.
 
-![A screenshot of a computer Description automatically
-generated](./media/image46.png)
+    <kbd>![ computer ](./media/image46.png)</kbd>
 
 ## Task 6 - Handling Incident "Sign-ins from IPs that attempt sign-ins to disabled accounts."
 
 1.  On the Azure
-    Portal [**http://portal.azure.com**](urn:gd:lg:a:send-vm-keys),
-    search for [**Microsoft Sentinel**](urn:gd:lg:a:send-vm-keys), then
+    Portal [**http://portal.azure.com**](urn:gd:lg:a:send-vm-keys)</kbd>,
+    search for [**Microsoft Sentinel**](urn:gd:lg:a:send-vm-keys)</kbd>, then
     click on **Microsoft Sentinel**.
 
-![A screenshot of a computer Description automatically
-generated](./media/image47.png)
+    <kbd>![ computer ](./media/image47.png)</kbd>
 
 2.  Select **SwrkXXXXXXX**.
 
-![A screenshot of a computer Description automatically
-generated](./media/image48.png)
+    <kbd>![ computer ](./media/image48.png)</kbd>
 
 3.  On the left menu navigate to Incident page and select the **Sign-ins
     from IPs that attempt sign-ins to disabled accounts** incident and
     on the right pane you can see the incident preview with the high
     level information about the incident.
 
-![](./media/image49.png)
+    <kbd>![](./media/image49.png)</kbd>
 
 4.  Click on the **View full details** button.
 
-![A screenshot of a computer Description automatically
-generated](./media/image50.png)
+    <kbd>![ computer ](./media/image50.png)</kbd>
 
 5.  On the **Incident** page, select the number of **Alerts**.
 
-![A screenshot of a computer Description automatically
-generated](./media/image51.png)
+    <kbd>![ computer ](./media/image51.png)</kbd>
 
 6.  You can see the raw logs showing all the events as the result of the
     query.
 
-![A screenshot of a computer Description automatically
-generated](./media/image52.png)
+    <kbd>![ computer ](./media/image52.png)</kbd>
 
 7.  In raw log search, expand the **ExtendedProperties**, these
     properties will help us to decide if this incident is correlated to
     other events.
 
-![A screenshot of a computer Description automatically
-generated](./media/image53.png)
+    <kbd>![ computer ](./media/image53.png)</kbd>
 
 8.  Navigate back to the Incident page by clicking **Done**.
 
-![A screenshot of a computer Description automatically
-generated](./media/image54.png)
+    <kbd>![ computer ](./media/image54.png)</kbd>
 
 9.  In the **Overview** tab, under **Incident Timeline**, select **3
     dots** near the latest alert and select **Run Playbook**.
 
-![A screenshot of a computer Description automatically
-generated](./media/image55.png)
+    <kbd>![ computer ](./media/image55.png)</kbd>
 
 10. Click on **Run** button for the
     playbook **Get-GeoFromIpAndTagIncident**.
 
-![A screenshot of a computer Description automatically
-generated](./media/image56.png)
+    <kbd>![ computer ](./media/image56.png)</kbd>
 
 11. If the playbook is configured correctly, it should finish in a
     couple of seconds and you should be able to see the notification of
     a successful run.
 
-![A screenshot of a computer Description automatically
-generated](./media/image57.png)
+    <kbd>![ computer ](./media/image57.png)</kbd>
 
 12. You can also navigate to **Run** tab to check if
     the **Playbook** ran successfully.
 
-![A screenshot of a login screen Description automatically
-generated](./media/image58.png)
+    <kbd>![ login screen ](./media/image58.png)</kbd>
 
 13. Close the dialogue box and navigate back to the
     main **Incident** page.
 
-![A screenshot of a login screen Description automatically
-generated](./media/image59.png)
+    <kbd>![ login screen ](./media/image59.png)</kbd>
 
 14. Select **Refresh** and now you will notice that new tags are added
     to the incident.
 
-![A screenshot of a computer Description automatically
-generated](./media/image60.png)
+    <kbd>![ computer ](./media/image60.png)</kbd>
 
 15. Note down the **IP address** under **Entities** into a notepad file.
     It will be used in the further steps of the lab.
 
-![A screenshot of a computer Description automatically
-generated](./media/image61.png)
+    <kbd>![ computer ](./media/image61.png)</kbd>
 
 16. Go to **Azure Portal Home page** by selecting Home from the top left
     corner of the page.
 
-![A screenshot of a computer Description automatically
-generated](./media/image62.png)
+    <kbd>![ computer ](./media/image62.png)</kbd>
 
 17. Click on Resource groups and then select
     the **RG4Sentinel** Resource Group.
 
-![A screenshot of a computer Description automatically
-generated](./media/image63.png)
+    <kbd>![ computer ](./media/image63.png)</kbd>
 
 18. Locate the Logic app named **Get-GeoFromIpAndTagIncident**.
 
-![A screenshot of a computer Description automatically
-generated](./media/image64.png)
+    <kbd>![ computer ](./media/image64.png)</kbd>
 
 19. Click on the last playbook run.
 
-![A screenshot of a computer Description automatically
-generated](./media/image65.png)
+    <kbd>![ computer ](./media/image65.png)</kbd>
 
 20. You will be able to review the execution steps.
 
-![](./media/image66.png)
+    <kbd>![](./media/image66.png)</kbd>
 
 21. From the Azure portal go to **Home** \> **Microsoft
     Sentinel** \> **SwrkXXXXXXX**. In the left navigation click
     on **Workbooks**.
 
-![A screenshot of a computer Description automatically
-generated](./media/image67.png)
+    <kbd>![ computer ](./media/image67.png)</kbd>
 
 22. In the right page press panel select **View saved workbook**.
 
-![A screenshot of a computer Description automatically
-generated](./media/image68.png)
+    <kbd>![ computer ](./media/image68.png)</kbd>
 
 23. It will open **Investigation Insights - \<date\>**, the saved
     Workbook.
 
-![A screenshot of a computer Description automatically
-generated](./media/image69.png)
+    <kbd>![ computer ](./media/image69.png)</kbd>
 
 24. Validate that in the properties selector, your workspace is set
     to **SwrkXXXXXXX** and the subscription is set to **Azure Pass -
     Sponsorship**.
 
-![Screenshot](./media/image70.png)
+    <kbd>![Screenshot](./media/image70.png)</kbd>
 
 25. As the subject of the investigation is the suspicious IP, we want to
     see all the activity done by this IP. So in the properties selector,
     switch on the **investigate by** to **Entity**.
 
-![A screenshot of a computer Description automatically
-generated](./media/image71.png)
+    <kbd>![ computer ](./media/image71.png)</kbd>
 
 26. In the **Investigate IP Address** Tab, add the suspicious IP
-    - [**175.45.176.99**](urn:gd:lg:a:send-vm-keys) that we noted in one
+    - [**175.45.176.99**](urn:gd:lg:a:send-vm-keys)</kbd> that we noted in one
     of the previous steps.
 
-![A screenshot of a computer Description automatically
-generated](./media/image72.png)
+    <kbd>![ computer ](./media/image72.png)</kbd>
 
 27. Under the Activity Detail you will be able to review successful
     logins from this IP with the user **Adele**, and also some failed
     logins to disabled accounts, ensure to set the time span to Last 7
     Days.
 
-![A screenshot of a computer Description automatically
-generated](./media/image73.png)
+    <kbd>![ computer ](./media/image73.png)</kbd>
 
 28. Scroll down and click on **Details** column \[**twice**\] to arrange
     the activity logs in an order to easily find the failed logins to
     disabled account.
 
-![A screenshot of a computer Description automatically
-generated](./media/image74.png)
+    <kbd>![ computer ](./media/image74.png)</kbd>
 
 Suppose the
-User [**adelev@m365x816222.onmicrosoft.com**](urn:gd:lg:a:send-vm-keys) is
+User [**adelev@m365x816222.onmicrosoft.com**](urn:gd:lg:a:send-vm-keys)</kbd> is
 validated in the internal HR system. From the information we collected,
 it seems that **Adele** is part of the security Red team, and this
 suspicious activity is the part of an exercise they conducted. Hence,
@@ -551,99 +493,87 @@ follow the following steps.
 29. From the Investigation insights page, click on the **Microsoft
     Sentinel** link.
 
-![A screenshot of a computer Description automatically
-generated](./media/image75.png)
+    <kbd>![ computer ](./media/image75.png)</kbd>
 
 30. From the navigation select **Incidents**, then click **on Sign-ins
     from IPs that attempt sign-ins to disabled accounts**. Click
     on **View full details**.
 
-![A screenshot of a computer Description automatically
-generated](./media/image76.png)
+    <kbd>![ computer ](./media/image76.png)</kbd>
 
 31. On the main incident page, select the relevant incident and
     press **Incident** **Actions \> Create automation Rule**.
 
-![A screenshot of a computer Description automatically
-generated](./media/image77.png)
+    <kbd>![ computer ](./media/image77.png)</kbd>
 
 32. In the expanded screen, we will see all the incident identifiers
-    (the IP, and the specific Analytics rule). Set the rule expiration
+    (the IP, and the specific Analytics rule)</kbd>. Set the rule expiration
     after two days and press **Apply**.
 
-![A screenshot of a computer Description automatically
-generated](./media/image78.png)
+    <kbd>![ computer ](./media/image78.png)</kbd>
 
-![Screenshot](./media/image79.png)
+    <kbd>![Screenshot](./media/image79.png)</kbd>
 
 33. On the main Incident page, under status, select **Close** from the
     drop down, classify the Incident as **Benign Positive - Suspicious
     but expected** and select **Apply**.
 
-![](./media/image80.png)
+    <kbd>![](./media/image80.png)</kbd>
 
-![](./media/image81.png)
+    <kbd>![](./media/image81.png)</kbd>
 
 ## Task 7 - Handling "Solorigate Network Beacon" incident
 
 1.  On the Azure
-    Portal [**http://portal.azure.com**](urn:gd:lg:a:send-vm-keys),
-    search for [**Microsoft Sentinel**](urn:gd:lg:a:send-vm-keys) and
+    Portal [**http://portal.azure.com**](urn:gd:lg:a:send-vm-keys)</kbd>,
+    search for [**Microsoft Sentinel**](urn:gd:lg:a:send-vm-keys)</kbd> and
     click on **Microsoft Sentinel**.
 
-![A screenshot of a computer service Description automatically
-generated](./media/image82.png)
+    <kbd>![ computer service ](./media/image82.png)</kbd>
 
 2.  Select **SwrkXXXXXXX**.
 
-![A screenshot of a chat Description automatically
-generated](./media/image83.png)
+    <kbd>![ chat ](./media/image83.png)</kbd>
 
 3.  Now click on **Incidents** to open the incidents page. This page
     will show by default all the open incidents in the last 24hr. Set
     the time span for **Last 30 days** from the top bar.
 
-![A screenshot of a computer Description automatically
-generated](./media/image84.png)
+    <kbd>![ computer ](./media/image84.png)</kbd>
 
 4.  From the list of active incidents, select "**Solorigate Network
     Beacon**" incident. Select **View full details**.
 
-![](./media/image85.png)
+    <kbd>![](./media/image85.png)</kbd>
 
 5.  Under **Owner**, select **Assign to me** from the dropdown, to
     assign the incident to yourself and click **Apply**.
 
-![A screenshot of a computer Description automatically
-generated](./media/image86.png)
+    <kbd>![ computer ](./media/image86.png)</kbd>
 
 6.  Read the description of the incident. As you can see, one of the
     domain IOCs related to **Solorigate** attack has been found. In this
     case, domain **avsvmcloud.com** is involved.
 
-![A screenshot of a computer Description automatically
-generated](./media/image87.png)
+    <kbd>![ computer ](./media/image87.png)</kbd>
 
 7.  From the right side of the screen select **Incident
-    actions** \> **Run playbook (Preview)**.
+    actions** \> **Run playbook (Preview)</kbd>**.
 
-![A screenshot of a computer Description automatically
-generated](./media/image88.png)
+    <kbd>![ computer ](./media/image88.png)</kbd>
 
 8.  Click on the **customplaybook**
 
-![A screenshot of a computer Description automatically
-generated](./media/image89.png)
+    <kbd>![ computer ](./media/image89.png)</kbd>
 
 9.  Then click on the **Run** drop down and select **Run**
 
-![A screenshot of a computer Description automatically
-generated](./media/image90.png)
+    <kbd>![ computer ](./media/image90.png)</kbd>
 
 10. You will be able to see the notification that the **Successfully
     checked the trigger.**
 
-![Screenshot](./media/image91.png)
+    <kbd>![Screenshot](./media/image91.png)</kbd>
 
 ## Task 8 - Hunting for more evidence
 
@@ -654,79 +584,68 @@ do a SolarWinds inventory check query. We will use this query to find
 any other affected hosts.
 
 1.  On the Azure
-    Portal [**http://portal.azure.com**](urn:gd:lg:a:send-vm-keys),
-    search for [**Microsoft Sentinel**](urn:gd:lg:a:send-vm-keys) and
+    Portal [**http://portal.azure.com**](urn:gd:lg:a:send-vm-keys)</kbd>,
+    search for [**Microsoft Sentinel**](urn:gd:lg:a:send-vm-keys)</kbd> and
     click on **Microsoft Sentinel**.
 
-![A screenshot of a computer Description automatically
-generated](./media/image92.png)
+    <kbd>![ computer ](./media/image92.png)</kbd>
 
 2.  Select **SwrkXXXXXXX**.
 
-![A screenshot of a chat Description automatically
-generated](./media/image93.png)
+    <kbd>![ chat ](./media/image93.png)</kbd>
 
 3.  Now click on **Hunting** and then select the **Queries** tab.
 
-![A screenshot of a computer Description automatically
-generated](./media/image94.png)
+    <kbd>![ computer ](./media/image94.png)</kbd>
 
 4.  In the search box, type "**solorigate**". Select **Solorigate
     Inventory check** query.
 
-![Screenshot](./media/image95.png)
+    <kbd>![Screenshot](./media/image95.png)</kbd>
 
 5.  Click on **Run Query**.
 
-![A screenshot of a computer Description automatically
-generated](./media/image96.png)
+    <kbd>![ computer ](./media/image96.png)</kbd>
 
 6.  You should see a total of three results. Click on the **3
     Results** or **View Results**.
 
-![A screenshot of a computer Description automatically
-generated](./media/image97.png)
+    <kbd>![ computer ](./media/image97.png)</kbd>
 
 7.  As you can see, under **AccountCustomEntity**, there are two
     additional computers where the malicious DLL and named pipe has been
     found. Bookmark those additional records, by selecting them and then
     clicking on **Add bookmark**.
 
-![A screenshot of a computer Description automatically
-generated](./media/image98.png)
+    <kbd>![ computer ](./media/image98.png)</kbd>
 
 8.  In the flying pane that appears, click on **Create** to create the
     bookmarks. As you can see entity mapping to already done for you.
 
-![A screenshot of a computer Description automatically
-generated](./media/image99.png)
+    <kbd>![ computer ](./media/image99.png)</kbd>
 
 9.  Wait until the operation finishes and close the log search using the
     ✖ at the top right corner.
 
-![A screenshot of a computer Description automatically
-generated](./media/image100.png)
+    <kbd>![ computer ](./media/image100.png)</kbd>
 
 10. Click on **Bookmarks** tab inside **Hunting** menu and
     click **Refresh**, where you should see your two new bookmarks
     created.
 
-![A screenshot of a computer Description automatically
-generated](./media/image101.png)
+    <kbd>![ computer ](./media/image101.png)</kbd>
 
 11. Select both of them and click on **Incident actions** at the top and
     then **Add to existing incident**.
 
-![A screenshot of a computer screen Description automatically
-generated](./media/image102.png)
+    <kbd>![ computer screen ](./media/image102.png)</kbd>
 
 12. From the list, pick the **Solorigate incident** that is assigned to
     you, and click **Add**.
 
-![A screenshot of a computer Description automatically
-generated](./media/image103.png)
+    <kbd>![ computer ](./media/image103.png)</kbd>
 
-![Screenshot](./media/image104.png)
+    <kbd>![Screenshot](./media/image104.png)</kbd>
 
 13. At this point you can ask the Operations team to isolate the hosts
     affected by this incident. Continue to the next task without closing
@@ -739,26 +658,22 @@ IOCs, so we can capture any new occurrences of this IOC in our logs.
 
 1.  Click on **Incidents** under Threat management.
 
-![A screenshot of a computer Description automatically
-generated](./media/image105.png)
+    <kbd>![ computer ](./media/image105.png)</kbd>
 
 2.  Select the **Solorigate incident** and click on View full details.
 
-![A screenshot of a computer Description automatically
-generated](./media/image106.png)
+    <kbd>![ computer ](./media/image106.png)</kbd>
 
 3.  Note down the **IP address** entity involved. Notice that you have
     now more computer entities available (the ones coming from the
-    bookmarks).
+    bookmarks)</kbd>.
 
-![A screenshot of a computer Description automatically
-generated](./media/image107.png)
+    <kbd>![ computer ](./media/image107.png)</kbd>
 
 4.  Click on **Threat Intelligence** under Threat management and
     click **Add new**
 
-![A screenshot of a computer Description automatically
-generated](./media/image108.png)
+    <kbd>![ computer ](./media/image108.png)</kbd>
 
 5.  Enter the following details in the **New indicator** dialog,
     with **Valid from** being today's date and **Valid until** being two
@@ -769,18 +684,15 @@ generated](./media/image108.png)
     - Ipv4 address -- **The address we copied in the previous step of
       this exercise.**
 
-    - Name -- [**Threat1**](urn:gd:lg:a:send-vm-keys)
+    - Name -- [**Threat1**](urn:gd:lg:a:send-vm-keys)</kbd>
 
-![A screenshot of a computer screen Description automatically
-generated](./media/image109.png)
+    <kbd>![ computer screen ](./media/image109.png)</kbd>
 
 6.  Enter the **Valid from** and **Valid until** dates and then click
     on **Apply**
 
-![A screenshot of a computer Description automatically
-generated](./media/image110.png)
+    <kbd>![ computer ](./media/image110.png)</kbd>
 
-![A screenshot of a computer Description automatically
-generated](./media/image111.png)
+    <kbd>![ computer ](./media/image111.png)</kbd>
 
-![](./media/image112.png)
+    <kbd>![](./media/image112.png)</kbd>

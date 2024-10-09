@@ -204,10 +204,7 @@ the premium features of the MDTI portal and API requiring licensing.
 The *Threat Intelligence* content solution includes the data connectors
 for all supported forms of Threat Intelligence.
 
-**NOTE:** Sentinel also supports importing Threat Intelligence
-indicators via the TAXII protocol using the **Threat Intelligence -
-TAXII** data connector, so if you have your own preferred TI source, you
-can add that to your workspace instead.
+> **NOTE:** Sentinel also supports importing Threat Intelligence indicators via the TAXII protocol using the **Threat Intelligence -    TAXII** data connector, so if you have your own preferred TI source, you can add that to your workspace instead.
 
 1.  On the **Azure
     Portal** ```http://portal.azure.com```
