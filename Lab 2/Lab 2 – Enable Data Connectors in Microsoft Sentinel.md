@@ -57,6 +57,12 @@ This exercise shows you how to enable Data connectors.
 
       <kbd>![](./media/image38.png)</kbd>   
 
+      <font color=darkgreen>
+      
+      > **Note** - Sometime it may not install any connector, which is also fine to proceed ahead with the Labs.
+
+      </font>
+
 
 11. From the top click on the link for **Microsoft Sentinel** or
     navigate back to the Sentinel page.
@@ -92,6 +98,13 @@ This exercise shows you how to enable Data connectors.
 
       <kbd>![](./media/image43.png)</kbd> 
 
+17. On the Content hub page search for ```Threat Intelligence```
+    and then select **Microsoft Defender Threat Intelligence (preview)** content and click
+    on **Install** button
+
+      <kbd>![](./media/image70.png)</kbd> 
+
+
 ## Task 2 - Enabling Azure Activity data connector
 
 This exercise shows you how to enable Data connectors.
@@ -116,14 +129,13 @@ generated](./media/image6.png)</kbd>
 3.  You should be able to see the **Data connectors** already available
     based on the selection made during the deployment.
 
-    <kbd>![A screenshot of a computer Description automatically
-generated](./media/image8.png)</kbd>
+
+    <kbd>![](./media/image9.png)</kbd>
 
 4.  On the data connectors screen, select the **Azure
     Activity** connector and click on **Open connector page**.
 
-    <kbd>![A screenshot of a computer Description automatically
-generated](./media/image9.png)</kbd>
+    <kbd>![](./media/image8.png)</kbd>
 
 5.  On the **Azure Activity connector** page, go to option number **2.
     Connect your subscriptions through diagnostic settings new
@@ -138,11 +150,13 @@ generated](./media/image10.png)</kbd>
 
 6.  On the **Scope** selection select **Azure Pass - Sponsorship** . do not select any Click **Select**.
 
+
+    <kbd>![](./media/image11.png)</kbd>
+
 7.  Go to the **Parameters** tab. On the **Primary Log Analytics
     workspace** select the **SwrkXXXXXXX**.
 
-    <kbd>![A screenshot of a computer Description automatically
-generated](./media/image12.png)</kbd>
+    <kbd>![](./media/image12.png)</kbd>
 
 8.  Under **Remediation** tab, select the check box besides **Create a
     remediation task** and then click on **Review + create** button
@@ -200,9 +214,11 @@ and respond to incidents.
 
       <kbd>![](./media/image53.png)</kbd> 
 
-      > **Note** - If you receive the error **Data Connector Not Found**, then navigate to **Content Hub** and then Reinstall the **Microsoft Defender for Cloud Connector** again. 
 
       <kbd>![](./media/image68.png)</kbd>
+
+      > **Note** - If you receive the error **Data Connector Not Found**, then navigate to **Content Hub** and then Reinstall the **Microsoft Defender for Cloud Connector** again, close the browser and relaunch it. Navigate to the Azure Portal `https://portal.azure.com`
+
 
       <kbd>![](./media/image69.png)</kbd>
 
@@ -295,3 +311,14 @@ generated](./media/image26.png)</kbd>
 
 6.  Threat Intelligence indicators will start being ingested into
     the **ThreatIntelligenceIndicator** table.
+
+    <font color=green>
+
+    > **Note** - We should have successfully installed all the below 4 Data connectors.
+ 
+    * **Azure Activity**
+    * **Tenant-based Microsoft Defender for Cloud (Preview)**
+    * **Subscription-based Microsoft Defender for Cloud (Legacy)**
+    * **Microsoft Defender Threat Intelligence (preview)**
+
+    </font>
