@@ -19,30 +19,84 @@ Microsoft Sentinel workspace provisioned.
 
 ## Exercise 1 - Enabling Data Connectors in Microsoft Sentinel
 
-### Task 1 - Enabling Azure Activity data connector
+## Task 1: Enable and Install the Data connectors.
 
 This exercise shows you how to enable Data connectors.
 
-1.  In a new edge browser tab navigate to
-    ```https://portal.azure.com/#view/Microsoft_AAD_UsersAndTenants/UserManagementMenuBlade/~/AllUsers```
-    and select the Tenant Administrator account
+1.  On the Azure Portal
+    ```https://portal.azure.com``` and search
+    for ```Microsoft Sentinel``` and click on **Microsoft Sentinel**.
 
-    <kbd>![](./media/image1.png)</kbd>
+    <kbd>![](./media/image32.png)</kbd> 
+
+5.  Select **SentWrkspcXXXXXX**.
+
+    <kbd>![](./media/image33.png)</kbd>  
+
+6.  Now select **Data Connectors** under **Configuration** section.
+
+    <kbd>![](./media/image34.png)</kbd>   
+ 
+
+7.  You should get the message **Data Connector with "content source =
+    gallery content" have been removed.** In that message select the
+    **Click here** link
+
+      <kbd>![](./media/image35.png)</kbd>      
+
+8.  On the **Out-of-the-box Content Centralization** page click on
+    **Continue**
+
+      <kbd>![](./media/image36.png)</kbd>      
+
+9.  Click on the **Complete centralization** button
+
+      <kbd>![](./media/image37.png)</kbd> 
+
+10. You should receive the notification as shown in below image
+
+      <kbd>![](./media/image38.png)</kbd>   
 
 
-2.  Select the **Assigned roles** under Manage and then click on **+ Add
-    assignments.**
+11. From the top click on the link for **Microsoft Sentinel** or
+    navigate back to the Sentinel page.
 
-    <kbd>![](./media/image2.png)</kbd>
+      <kbd>![](./media/image39.png)</kbd>
+    
+13. Click on the **Refresh** button and you should be able to see the few connectors
+    Data connectors showing.
 
-3.  Search and select **Security Administrator**, then click on the
-    **Add** button.
+      <kbd>![](./media/image40.png)</kbd> 
+ 
 
-    <kbd>![](./media/image3.png)</kbd>
+      <font color=darkgreen>
+      
+      > **Note** - Sometime it may not install any connector, which is also fine to proceed ahead with the Labs.
 
-    <kbd>![](./media/image4.png)</kbd>
+      </font>
 
-4.  On the **Azure
+14. Click on **Content hub** under **Content management**
+
+    <kbd>![](./media/image41.png)</kbd>
+ 
+
+15. On the Content hub page search for ```Azure Activity``` and then
+    select **Azure Activity** content and click on **Install** button
+
+      <kbd>![](./media/image42.png)</kbd> 
+ 
+
+16. On the Content hub page search for ```Microsoft defender for cloud```
+    and then select **Microsoft Defender for Cloud** content and click
+    on **Install** button
+
+      <kbd>![](./media/image43.png)</kbd> 
+
+## Task 2 - Enabling Azure Activity data connector
+
+This exercise shows you how to enable Data connectors.
+
+1.  On the **Azure
     Portal** ```http://portal.azure.com```
     search for ```Microsoft Sentinel``` and click on **Microsoft
     Sentinel**.
@@ -50,12 +104,12 @@ This exercise shows you how to enable Data connectors.
     <kbd>![A screenshot of a computer Description automatically
 generated](./media/image5.png)</kbd>
 
-1.  Select **SwrkXXXXXXX**.
+2.  Select **SwrkXXXXXXX**.
 
     <kbd>![A screenshot of a computer Description automatically
 generated](./media/image6.png)</kbd>
 
-2.  Now select **Data Connectors** under **Configuration** section.
+3. Now select **Data Connectors** under **Configuration** section.
 
     <kbd>![](./media/image7.png)</kbd>
 
@@ -127,7 +181,7 @@ generated](./media/image16.png)</kbd>
 14. Close the **Azure Activity** connector blade to go back to
     the **Data Connectors** page.
 
-### Task 2 - Enabling Microsoft Defender for Cloud data connectors
+### Task 3 - Enabling Microsoft Defender for Cloud data connectors
 
 This task shows you how to enable the Microsoft Defender for Cloud data
 connectors. This connector allows you to stream your security alerts from
@@ -142,7 +196,7 @@ and respond to incidents.
 
 2.  In the **Data connectors** screen, type ```tenant``` in the search
     bar, select the **Tenant-based Microsoft Defender for Cloud**
-    **(Preview)** connector and click on **Open connector page**.
+    **(Preview)</kbd>** connector and click on **Open connector page**.
 
       <kbd>![](./media/image53.png)</kbd> 
 
@@ -152,7 +206,7 @@ and respond to incidents.
 
       <kbd>![](./media/image69.png)</kbd>
 
-3.  On the **Tenant-based Microsoft Defender for Cloud** **(Preview)**
+3.  On the **Tenant-based Microsoft Defender for Cloud** **(Preview)</kbd>**
     connector page, under **Configuration** section click on the
     **Connect** button.
 
@@ -171,12 +225,12 @@ and respond to incidents.
 
 6.  Back on the **Data connectors** screen, type ```subscription``` in the
     search bar, select the **Subscription-based Microsoft Defender for
-    Cloud** **(legacy)** connector and click on **Open connector page**.
+    Cloud** **(legacy)</kbd>** connector and click on **Open connector page**.
 
       <kbd>![](./media/image57.png)</kbd>  
 
 7.  On the **Subscription-based Microsoft Defender for Cloud**
-    **(legacy)** connector page, under **Configuration** section, select
+    **(legacy)</kbd>** connector page, under **Configuration** section, select
     the **Azure Pass – Sponsorship** subscription and then click on the
     **Connect** button.
 
@@ -192,9 +246,9 @@ and respond to incidents.
       <kbd>![](./media/image60.png)</kbd>  
 
 
-### Task 3 - Enabling Microsoft Defender Threat Intelligence connector
+### Task 4 - Enabling Microsoft Defender Threat Intelligence connector
 
-The **Microsoft Defender Threat Intelligence** (MDTI) connector to your
+The **Microsoft Defender Threat Intelligence** (MDTI)</kbd> connector to your
 Sentinel workspace, which ingests Microsoft Threat Intelligence
 indicators automatically into the ThreatIntelligenceIndicator table.
 MDTI provides a set of indicators and access to
@@ -220,7 +274,7 @@ generated](./media/image21.png)</kbd>
 generated](./media/image22.png)</kbd>
 
 3.  From the left menu choose the ***Microsoft Defender Threat
-    Intelligence (preview)*** connector and click **Open Connector
+    Intelligence (preview)</kbd>*** connector and click **Open Connector
     Page** at the bottom right.
 
     <kbd>![A screenshot of a computer Description automatically

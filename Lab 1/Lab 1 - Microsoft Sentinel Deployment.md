@@ -186,7 +186,7 @@ generated](./media/image27.jpeg)</kbd>
 
     <kbd>![](./media/image28.jpeg)</kbd>
 
-3.  Search and select **Security Administrator**, then click on
+3.  Search and select `Security Administrator`, then click on
     the **Add** button.
 
     <kbd>![](./media/image29.jpeg)</kbd>
@@ -283,7 +283,7 @@ follows:
 
     - Resource Group: click on **Create new**  ```RG4Sentinel```
 
-    - Region: **East US**
+    - Region: **West US**
 
     - Workspace Name: ```swrkXXXXXXX``` \[Substitute **XXXXXXX** with random number]
 
@@ -362,8 +362,8 @@ generated](./media/image50.png)</kbd>
 
 **Task 8 - Explore the Microsoft Sentinel dashboard**
 
-1.  In the top search bar, type Microsoft Sentinel and click on
-    Microsoft Sentinel.
+1.  In the top search bar, type ```Microsoft Sentinel``` and click on
+**Microsoft Sentinel**.
 
     <kbd>![](./media/image51.jpeg)</kbd>
 
@@ -385,26 +385,26 @@ generated](./media/image50.png)</kbd>
 
     <kbd>![](./media/image53.jpeg)</kbd>
 
-4.  Incidents details will populate once the incidents occur in the
+4.  **Incidents** details will populate once the incidents occur in the
     environment.
 
     <kbd>![](./media/image54.jpeg)</kbd>
 
-5.  The Automation rules that are create will appear under the
+5.  The **Automation** rules that are create will appear under the
     Automation dashboard.
 
     <kbd>![](./media/image55.jpeg)</kbd>
 
-6.  The Data dashboard will display the Connector health and Data
+6.  The **Data** dashboard will display the Connector health and Data
     received
 
     <kbd>![](./media/image56.jpeg)</kbd>
 
-7.  The Analytics dashboard will display the details of Analytics rules.
+7.  The **Analytics** dashboard will display the details of Analytics rules.
 
     <kbd>![](./media/image57.jpeg)</kbd>
 
-**Task 10 – Configure Microsoft Sentinel Playbook**
+**Task 9 – Create a custom Playbook**
 
 In this task, we will create a Playbook that will be later used in the
 lab.
@@ -521,7 +521,7 @@ lab.
 
 **Congratulations!!!!** You successfully created a playbook that adds the comment to any incidents. You can modify the steps according to your need in the flow designer to create custom automation flow.
 
-**Task 9 - Configure Microsoft Sentinel Playbook**
+**Task 10 - Configure Microsoft Sentinel Playbook**
 
 In this task, we will configure a Playbook that will be later used in
 the lab. This will allow the playbook to access Sentinel.
