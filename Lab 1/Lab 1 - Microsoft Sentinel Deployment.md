@@ -94,13 +94,13 @@ automatically generated](./media/image3.jpeg)</kbd>
     <kbd>![A screenshot of a computer Description automatically
 generated](./media/image14.jpeg)</kbd>
 
-2.  From the list of Subscriptions select the **Azure Pass --
+2.  From the list of Subscriptions select the **Azure Pass -
     Sponsorship**.
 
     <kbd>![A screenshot of a computer Description automatically
 generated](./media/image15.jpeg)</kbd>
 
-3.  On the **Azure Pass -- Sponsorship** page click on **Access control
+3.  On the **Azure Pass - Sponsorship** page click on **Access control
     (IAM)</kbd>**, then click on **+ Add** drop-down and select **Add role
     assignment**.
 
@@ -201,7 +201,7 @@ generated](./media/image30.jpeg)</kbd>
 
     <kbd>![](./media/image6.png)</kbd>
 
-2.  On the Notification – **You may be viewing limited information. To gettenant-wide visibility, click here -->** click on it.
+2.  On the Notification – **You may be viewing limited information. To gettenant-wide visibility, click here ->** click on it.
 
     <kbd>![](./media/image80.png)</kbd>
 
@@ -360,7 +360,7 @@ generated](./media/image49.png)</kbd>
     <kbd>![A screenshot of a computer Description automatically
 generated](./media/image50.png)</kbd>
 
-**Task 8 -- Explore the Microsoft Sentinel dashboard**
+**Task 8 - Explore the Microsoft Sentinel dashboard**
 
 1.  In the top search bar, type Microsoft Sentinel and click on
     Microsoft Sentinel.
@@ -477,11 +477,11 @@ lab.
 
 15. Add the following details and click on **Next : Connections**.
 
-    - Subscription -- **Azure Pass - Sponsorship**
+    - Subscription - **Azure Pass - Sponsorship**
 
-    - Resource group -- **RG4Sentinel**
+    - Resource group - **RG4Sentinel**
 
-    - Playbook name -- ```customplaybook```
+    - Playbook name - ```customplaybook```
 
     - Check the box near Enable diagnostics logs in log analytics.
 

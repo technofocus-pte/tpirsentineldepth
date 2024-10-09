@@ -17,7 +17,7 @@ Microsoft Sentinel workspace provisioned.
 </font>
 
 
-## Exercise 1 -- Enabling Data Connectors in Microsoft Sentinel
+## Exercise 1 - Enabling Data Connectors in Microsoft Sentinel
 
 ### Task 1 - Enabling Azure Activity data connector
 
@@ -82,7 +82,7 @@ generated](./media/image9.png)</kbd>
     <kbd>![A screenshot of a computer Description automatically
 generated](./media/image10.png)</kbd>
 
-6.  On the **Scope** selection select **Azure Pass -- Sponsorship** . do not select any Click **Select**.
+6.  On the **Scope** selection select **Azure Pass - Sponsorship** . do not select any Click **Select**.
 
 7.  Go to the **Parameters** tab. On the **Primary Log Analytics
     workspace** select the **SwrkXXXXXXX**.
@@ -127,43 +127,69 @@ generated](./media/image16.png)</kbd>
 14. Close the **Azure Activity** connector blade to go back to
     the **Data Connectors** page.
 
-### Task 2 - Enabling Tenant-based Microsoft Defender for Cloud data connector
+### Task 2 - Enabling Microsoft Defender for Cloud data connectors
 
 This task shows you how to enable the Microsoft Defender for Cloud data
-connector. This connector allows you to stream your security alerts from
+connectors. This connector allows you to stream your security alerts from
 Microsoft Defender for Cloud into Microsoft Sentinel, so you can view
 Defender data in workbooks, query it to produce alerts, and investigate
 and respond to incidents.
 
-1.  On the **Data connectors** screen, type ```tenant``` in the search
-    bar, select the **Tenant-based Microsoft Defender for
-    Cloud** **(Preview)** connector and click on **Open connector
-    page**.
+1.  While still on the **Microsoft Sentinel** page click on **Data
+    Connectors** under **Configuration** section.
 
-    <kbd>![A screenshot of a computer Description automatically
-generated](./media/image17.png)</kbd>
+      <kbd>![](./media/image44.png)</kbd>    
 
-2.  On the **Tenant-based Microsoft Defender for
-    Cloud** **(Preview)** connector page,
-    under **Configuration** section click on the **Connect** button.
+2.  In the **Data connectors** screen, type ```tenant``` in the search
+    bar, select the **Tenant-based Microsoft Defender for Cloud**
+    **(Preview)** connector and click on **Open connector page**.
 
-    <kbd>![A screenshot of a computer Description automatically
-generated](./media/image18.png)</kbd>
+      <kbd>![](./media/image53.png)</kbd> 
 
-3.  You should receive the notification as Connected
-    successfully. **If may be possible that the notification may not
-    appear.**
+      > **Note** - If you receive the error **Data Connector Not Found**, then navigate to **Content Hub** and then Reinstall the **Microsoft Defender for Cloud Connector** again. 
 
-    <kbd>![A screenshot of a computer Description automatically
-generated](./media/image19.png)</kbd>
+      <kbd>![](./media/image68.png)</kbd>
 
-4.  Wait for 3-5 minutes and then refresh the page, the Status of the
-    connector should also be updated to **Connected.**
+      <kbd>![](./media/image69.png)</kbd>
 
-    <kbd>![A screenshot of a computer Description automatically
-generated](./media/image20.png)</kbd>
+3.  On the **Tenant-based Microsoft Defender for Cloud** **(Preview)**
+    connector page, under **Configuration** section click on the
+    **Connect** button.
+
+      <kbd>![](./media/image54.png)</kbd>
+
+4.  You should receive the notification as **Connected successfully.**
+
+      <kbd>![](./media/image55.png)</kbd>
 
 
+5.  Wait for 1-2 minutes and then refresh the page, the Status of the
+    connector should also be updated to **Connected.**
+
+      <kbd>![](./media/image56.png)</kbd> 
+
+
+6.  Back on the **Data connectors** screen, type ```subscription``` in the
+    search bar, select the **Subscription-based Microsoft Defender for
+    Cloud** **(legacy)** connector and click on **Open connector page**.
+
+      <kbd>![](./media/image57.png)</kbd>  
+
+7.  On the **Subscription-based Microsoft Defender for Cloud**
+    **(legacy)** connector page, under **Configuration** section, select
+    the **Azure Pass – Sponsorship** subscription and then click on the
+    **Connect** button.
+
+      <kbd>![](./media/image58.png)</kbd>    
+
+8.  You should receive the notification as **Connected successfully**.
+
+      <kbd>![](./media/image59.png)</kbd>  
+
+
+9.  The Status of the connector should also be updated to **Connected.**
+
+      <kbd>![](./media/image60.png)</kbd>  
 
 
 ### Task 3 - Enabling Microsoft Defender Threat Intelligence connector
@@ -172,7 +198,7 @@ The **Microsoft Defender Threat Intelligence** (MDTI) connector to your
 Sentinel workspace, which ingests Microsoft Threat Intelligence
 indicators automatically into the ThreatIntelligenceIndicator table.
 MDTI provides a set of indicators and access to
-the https://ti.defender.microsoft.com portal at no additional cost, with
+the ```https://ti.defender.microsoft.com``` portal at no additional cost, with
 the premium features of the MDTI portal and API requiring licensing.
 
 The *Threat Intelligence* content solution includes the data connectors
@@ -184,8 +210,8 @@ TAXII** data connector, so if you have your own preferred TI source, you
 can add that to your workspace instead.
 
 1.  On the **Azure
-    Portal** [**http://portal.azure.com**](urn:gd:lg:a:send-vm-keys),
-    search for **Microsoft Sentinel** and click on **Microsoft
+    Portal** ```http://portal.azure.com```
+    search for ```Microsoft Sentinel``` and click on **Microsoft
     Sentinel**.
 
     <kbd>![A screenshot of a computer service Description automatically
