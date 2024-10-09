@@ -1,4 +1,4 @@
-# Lab 2 - Enable Data Connectors in Microsoft Sentinel
+    <kbd>![# Lab 2 - Enable Data Connectors in Microsoft Sentinel
 
 ## Objectives
 
@@ -33,43 +33,43 @@ This exercise shows you how to enable Data connectors.
 2.  Select the **Assigned roles** under Manage and then click on **+ Add
     assignments.**
 
-    ![](./media/image2.png)
+    <kbd>![](./media/image2.png)</kbd>
 
 3.  Search and select **Security Administrator**, then click on the
     **Add** button.
 
-    ![](./media/image3.png)
+    <kbd>![](./media/image3.png)</kbd>
 
-    ![](./media/image4.png)
+    <kbd>![](./media/image4.png)</kbd>
 
 4.  On the **Azure
     Portal** [**http://portal.azure.com**](urn:gd:lg:a:send-vm-keys),
     search for **Microsoft Sentinel** and click on **Microsoft
     Sentinel**.
 
-![A screenshot of a computer Description automatically
-generated](./media/image5.png)
+<kbd>![A screenshot of a computer Description automatically
+generated](./media/image5.png)</kbd>
 
 1.  Select **SwrkXXXXXXX**.
 
-![A screenshot of a computer Description automatically
-generated](./media/image6.png)
+<kbd>![A screenshot of a computer Description automatically
+generated](./media/image6.png)</kbd>
 
 2.  Now select **Data Connectors** under **Configuration** section.
 
-![](./media/image7.png)
+<kbd>![](./media/image7.png)</kbd>
 
 3.  You should be able to see the **Data connectors** already available
     based on the selection made during the deployment.
 
-![A screenshot of a computer Description automatically
-generated](./media/image8.png)
+<kbd>![A screenshot of a computer Description automatically
+generated](./media/image8.png)</kbd>
 
 4.  On the data connectors screen, select the **Azure
     Activity** connector and click on **Open connector page**.
 
-![A screenshot of a computer Description automatically
-generated](./media/image9.png)
+<kbd>![A screenshot of a computer Description automatically
+generated](./media/image9.png)</kbd>
 
 5.  On the **Azure Activity connector** page, go to option number **2.
     Connect your subscriptions through diagnostic settings new
@@ -79,39 +79,39 @@ generated](./media/image9.png)
     Assignment** wizard, this will redirect you to the policy creation
     page.
 
-![A screenshot of a computer Description automatically
-generated](./media/image10.png)
+<kbd>![A screenshot of a computer Description automatically
+generated](./media/image10.png)</kbd>
 
 6.  On the **Scope** selection select **Azure Pass -- Sponsorship** and
     under **Resource Group** select **RG4Sentinel**. Click **Select**.
 
-![A screenshot of a computer Description automatically
-generated](./media/image11.png)
+<kbd>![A screenshot of a computer Description automatically
+generated](./media/image11.png)</kbd>
 
 7.  Go to the **Parameters** tab. On the **Primary Log Analytics
     workspace** select the **SwrkXXXXXXX**.
 
-![A screenshot of a computer Description automatically
-generated](./media/image12.png)
+<kbd>![A screenshot of a computer Description automatically
+generated](./media/image12.png)</kbd>
 
 8.  Under **Remediation** tab, select the check box besides **Create a
     remediation task** and then click on **Review + create** button
 
-![A screenshot of a computer Description automatically
-generated](./media/image13.png)
+<kbd>![A screenshot of a computer Description automatically
+generated](./media/image13.png)</kbd>
 
 9.  On the **Review + create** tab, click on the **Create** button.
 
-![A screenshot of a computer Description automatically
-generated](./media/image14.png)
+<kbd>![A screenshot of a computer Description automatically
+generated](./media/image14.png)</kbd>
 
 11. In the **Notification** pane you will be able to see the '**Role
     Assignments creation succeeded**', '**Remediation task creation
     succeeded**' and '**Creating policy assignment succeeded**'
     notifications.
 
-![A screenshot of a computer Description automatically
-generated](./media/image15.png)
+<kbd>![A screenshot of a computer Description automatically
+generated](./media/image15.png)</kbd>
 
 12. On the **Azure Activity connector** page you will be able to see the
     connection status.
@@ -123,8 +123,8 @@ destinations for its activity logs. If this limit is already reached,
 the policy created as part of this exercise won't be able to add an
 additional destination to your Microsoft Sentinel workspace.
 
-![A screenshot of a computer Description automatically
-generated](./media/image16.png)
+<kbd>![A screenshot of a computer Description automatically
+generated](./media/image16.png)</kbd>
 
 13. Continue to the next task then you can check back after 30 minutes.
 
@@ -144,28 +144,28 @@ and respond to incidents.
     Cloud** **(Preview)** connector and click on **Open connector
     page**.
 
-![A screenshot of a computer Description automatically
-generated](./media/image17.png)
+<kbd>![A screenshot of a computer Description automatically
+generated](./media/image17.png)</kbd>
 
 2.  On the **Tenant-based Microsoft Defender for
     Cloud** **(Preview)** connector page,
     under **Configuration** section click on the **Connect** button.
 
-![A screenshot of a computer Description automatically
-generated](./media/image18.png)
+<kbd>![A screenshot of a computer Description automatically
+generated](./media/image18.png)</kbd>
 
 3.  You should receive the notification as Connected
     successfully. **\[If may be possible that the notification may not
     appear.\]{.underline}**
 
-![A screenshot of a computer Description automatically
-generated](./media/image19.png)
+<kbd>![A screenshot of a computer Description automatically
+generated](./media/image19.png)</kbd>
 
 4.  Wait for 3-5 minutes and then refresh the page, the Status of the
     connector should also be updated to **Connected.**
 
-![A screenshot of a computer Description automatically
-generated](./media/image20.png)
+<kbd>![A screenshot of a computer Description automatically
+generated](./media/image20.png)</kbd>
 
 ### Task 3 - Enabling Microsoft Defender Threat Intelligence connector
 
@@ -189,33 +189,33 @@ can add that to your workspace instead.
     search for **Microsoft Sentinel** and click on **Microsoft
     Sentinel**.
 
-![A screenshot of a computer service Description automatically
-generated](./media/image21.png)
+<kbd>![A screenshot of a computer service Description automatically
+generated](./media/image21.png)</kbd>
 
 2.  Select **SwrkXXXXXXX**.
 
-![A screenshot of a computer Description automatically
-generated](./media/image22.png)
+<kbd>![A screenshot of a computer Description automatically
+generated](./media/image22.png)</kbd>
 
 3.  From the left menu choose the ***Microsoft Defender Threat
     Intelligence (preview)*** connector and click **Open Connector
     Page** at the bottom right.
 
-![A screenshot of a computer Description automatically
-generated](./media/image23.png)
+<kbd>![A screenshot of a computer Description automatically
+generated](./media/image23.png)</kbd>
 
 4.  On the Connector page, from the **Import indicators** list, leave
     the default "**All available**" selected, and click **Connect**.
 
-![A screenshot of a computer Description automatically
-generated](./media/image24.png)
+<kbd>![A screenshot of a computer Description automatically
+generated](./media/image24.png)</kbd>
 
-![Screenshot](./media/image25.png)
+<kbd>![Screenshot](./media/image25.png)</kbd>
 
 5.  The Status of the Connector should be updated to **Connected.**
 
-![A screenshot of a computer Description automatically
-generated](./media/image26.png)
+<kbd>![A screenshot of a computer Description automatically
+generated](./media/image26.png)</kbd>
 
 6.  Threat Intelligence indicators will start being ingested into
     the **ThreatIntelligenceIndicator** table.
