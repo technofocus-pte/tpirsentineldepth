@@ -1,19 +1,21 @@
-# Lab 2 -- Enable Data Connectors in Microsoft Sentinel
+# Lab 2 - Enable Data Connectors in Microsoft Sentinel
 
 ## Objectives
 
 In this Lab you will learn how to enable Data Connectors in Microsoft
 Sentinel to bring alerts and/or telemetry from different sources.
 
-Prerequisites
+**Prerequisites**
 
-This lab assumes that you have completed Lab 1, as you will need an
+This lab assumes that you have completed **Lab 1**, as you will need an
 Microsoft Sentinel workspace provisioned.
 
-Some of the data connectors that will be used in this lab, require some
-specific permissions on the workspace or your azure subscription. If you
-don't have the appropriate permissions, you can still continue doing the
-rest of the labs.
+<font color=green>
+
+> **Some of the data connectors that will be used in this lab, require some specific permissions on the workspace or your azure subscription. If you don't have the appropriate permissions, you can still continue doing the rest of the labs.**
+
+</font>
+
 
 ## Exercise 1 -- Enabling Data Connectors in Microsoft Sentinel
 
@@ -21,12 +23,12 @@ rest of the labs.
 
 This exercise shows you how to enable Data connectors.
 
-1.  In the browser tab navigate to
-    <https://portal.azure.com/#view/Microsoft_AAD_UsersAndTenants/UserManagementMenuBlade/~/AllUsers>
+1.  In a new edge browser tab navigate to
+    ```https://portal.azure.com/#view/Microsoft_AAD_UsersAndTenants/UserManagementMenuBlade/~/AllUsers```
     and select the Tenant Administrator account
 
-    ![A screenshot of a computer Description automatically
-    generated](./media/image1.png)
+    <kbd>![](./media/image1.png)</kbd>
+
 
 2.  Select the **Assigned roles** under Manage and then click on **+ Add
     assignments.**
