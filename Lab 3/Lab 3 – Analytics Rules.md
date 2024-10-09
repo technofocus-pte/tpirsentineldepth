@@ -166,7 +166,7 @@ stich together into high severity incidence:
     collection strategy, run the search query below to see the list of
     activities Microsoft Sentinel captured in the last 24hr
 
-> **OfficeActivity_CL | distinct Operation_s**
+    ```OfficeActivity_CL | distinct Operation_s```
 
 20. You will be able to see the **New-InboxRule** operation is indeed
     captured in your logs.
@@ -215,13 +215,13 @@ stich together into high severity incidence:
 - In the **Entity type** open the supported list of entities and
   select **Account**.
 
-      <kbd>![ computer Description automatically
+    <kbd>![ computer Description automatically
   generated](./media/image29.png)</kbd>
 
 - From the **Identifier** dropdown menu select **FullName** and from
   **Value** drop down menu select **UserId\_\_s.**
 
-      <kbd>![ computer Description automatically
+    <kbd>![ computer Description automatically
   generated](./media/image30.png)</kbd>
 
 - Click **+ Add new entity** and this time select **Host** entity. From
@@ -248,7 +248,7 @@ stich together into high severity incidence:
     environment and should be tune)</kbd>. If you deployed the lab more than
     12 hours ago, you will need to change the lookback period.
 
-        <kbd>![ computer ](./media/image33.png)</kbd>
+    <kbd>![ computer ](./media/image33.png)</kbd>
 
 29. In the **Suppression** leave it to **Off**. Click
     the **Next:Incident settings**\>.
@@ -273,7 +273,7 @@ stich together into high severity incidence:
 31. Click on **Next: Automated response** and also
     press **Next:Review** and **Create** this newly analytics rule.
 
-        <kbd>![ computer ](./media/image36.png)</kbd>
+    <kbd>![ computer ](./media/image36.png)</kbd>
 
 32. On the **Review + create** tab, review the details and then click on
     **Save** button.
@@ -296,7 +296,7 @@ analytics rule.
     <kbd>![ computer ](./media/image39.png)</kbd>
 
 33. Locate a new incident with title **"Malicious Inbox Rule, affected
-    user <AdeleV@contoso.OnMicrosoft.com>"** notice that the name adapt
+    user `AdeleV@contoso.OnMicrosoft.com`"** notice that the name adapt
     and the effected user name added to the incident name.
 
     <kbd>![ computer ](./media/image40.png)</kbd>
@@ -307,7 +307,7 @@ analytics rule.
 
     <kbd>![ computer ](./media/image41.png)</kbd>
 
-35. Click on the "**view full details**".
+35. Click on the **view full details**.
 
     <kbd>![ computer ](./media/image42.png)</kbd>
 
@@ -322,7 +322,7 @@ analytics rule.
 
     <kbd>![ computer ](./media/image44.png)</kbd>
 
-38. Click on the entity **"<AdeleV@contoso.OnMicrosoft.com>"** and then
+38. Click on the entity **`AdeleV@contoso.OnMicrosoft.com** and then
     click on **View full details** button.
 
     <kbd>![ computer ](./media/image45.png)</kbd>
@@ -337,8 +337,8 @@ analytics rule.
 ## Task 6 - Handling Incident "Sign-ins from IPs that attempt sign-ins to disabled accounts."
 
 1.  On the Azure
-    Portal [**http://portal.azure.com**](urn:gd:lg:a:send-vm-keys)</kbd>,
-    search for [**Microsoft Sentinel**](urn:gd:lg:a:send-vm-keys)</kbd>, then
+    Portal `http://portal.azure.com`,
+    search for `Microsoft Sentinel`, then
     click on **Microsoft Sentinel**.
 
     <kbd>![ computer ](./media/image47.png)</kbd>
@@ -347,10 +347,8 @@ analytics rule.
 
     <kbd>![ computer ](./media/image48.png)</kbd>
 
-3.  On the left menu navigate to Incident page and select the **Sign-ins
-    from IPs that attempt sign-ins to disabled accounts** incident and
-    on the right pane you can see the incident preview with the high
-    level information about the incident.
+3.  On the left menu navigate to Incident page and select the **Sign-ins from IPs that attempt sign-ins to disabled accounts** incident and
+    on the right pane you can see the incident preview with the high level information about the incident.
 
     <kbd>![](./media/image49.png)</kbd>
 
@@ -362,8 +360,7 @@ analytics rule.
 
     <kbd>![ computer ](./media/image51.png)</kbd>
 
-6.  You can see the raw logs showing all the events as the result of the
-    query.
+6.  You can see the raw logs showing all the events as the result of the query.
 
     <kbd>![ computer ](./media/image52.png)</kbd>
 
@@ -463,7 +460,7 @@ analytics rule.
     <kbd>![ computer ](./media/image71.png)</kbd>
 
 26. In the **Investigate IP Address** Tab, add the suspicious IP
-    - [**175.45.176.99**](urn:gd:lg:a:send-vm-keys)</kbd> that we noted in one
+    - `175.45.176.99` that we noted in one
     of the previous steps.
 
     <kbd>![ computer ](./media/image72.png)</kbd>
@@ -481,14 +478,14 @@ analytics rule.
 
     <kbd>![ computer ](./media/image74.png)</kbd>
 
-Suppose the
-User [**adelev@m365x816222.onmicrosoft.com**](urn:gd:lg:a:send-vm-keys)</kbd> is
-validated in the internal HR system. From the information we collected,
-it seems that **Adele** is part of the security Red team, and this
-suspicious activity is the part of an exercise they conducted. Hence,
-the SOC manager ask us to add this IP to the whitelisting IP's, so that
-the system will not trigger incident on it any more. To do this we will
-follow the following steps.
+    > Suppose the
+    User **`adelev@m365x816222.onmicrosoft.com** is
+    validated in the internal HR system. From the information we collected,
+    it seems that **Adele** is part of the security Red team, and this
+    suspicious activity is the part of an exercise they conducted. Hence,
+    the SOC manager ask us to add this IP to the whitelisting IP's, so that
+    the system will not trigger incident on it any more. To do this we will
+    follow the following steps.
 
 29. From the Investigation insights page, click on the **Microsoft
     Sentinel** link.
@@ -525,8 +522,8 @@ follow the following steps.
 ## Task 7 - Handling "Solorigate Network Beacon" incident
 
 1.  On the Azure
-    Portal [**http://portal.azure.com**](urn:gd:lg:a:send-vm-keys)</kbd>,
-    search for [**Microsoft Sentinel**](urn:gd:lg:a:send-vm-keys)</kbd> and
+    Portal `http://portal.azure.com`
+    search for `Microsoft Sentinel` and
     click on **Microsoft Sentinel**.
 
     <kbd>![ computer service ](./media/image82.png)</kbd>
@@ -584,8 +581,8 @@ do a SolarWinds inventory check query. We will use this query to find
 any other affected hosts.
 
 1.  On the Azure
-    Portal [**http://portal.azure.com**](urn:gd:lg:a:send-vm-keys)</kbd>,
-    search for [**Microsoft Sentinel**](urn:gd:lg:a:send-vm-keys)</kbd> and
+    Portal `http://portal.azure.com`
+    search for `Microsoft Sentinel` and
     click on **Microsoft Sentinel**.
 
     <kbd>![ computer ](./media/image92.png)</kbd>
@@ -598,7 +595,7 @@ any other affected hosts.
 
     <kbd>![ computer ](./media/image94.png)</kbd>
 
-4.  In the search box, type "**solorigate**". Select **Solorigate
+4.  In the search box, type `solorigate`. Select **Solorigate
     Inventory check** query.
 
     <kbd>![Screenshot](./media/image95.png)</kbd>
@@ -651,7 +648,7 @@ any other affected hosts.
     affected by this incident. Continue to the next task without closing
     the window.
 
-Task 9 - Adding IOC to Threat Intelligence
+## Task 9 - Adding IOC to Threat Intelligence
 
 Now, we will add the IP address related to the incident to our list of
 IOCs, so we can capture any new occurrences of this IOC in our logs.
@@ -679,12 +676,13 @@ IOCs, so we can capture any new occurrences of this IOC in our logs.
     with **Valid from** being today's date and **Valid until** being two
     months after. Then click **Apply**.
 
-    - Types -- **ipv4-addr**
+    - Types - **ipv4-addr**
 
-    - Ipv4 address -- **The address we copied in the previous step of
-      this exercise.**
+    - Ipv4 address - **The address we copied in the previous step of this exercise.**
 
-    - Name -- [**Threat1**](urn:gd:lg:a:send-vm-keys)</kbd>
+    - Description - `The address we copied in the previous step of this exercise.`
+
+    - Name - `Threat1`
 
     <kbd>![ computer screen ](./media/image109.png)</kbd>
 
