@@ -8,7 +8,7 @@ Detections)</kbd>.
 
 ## Prerequisites
 
-This Lab assumes that ***you have completed Lab 1***, as the data and
+This Lab assumes that **you have completed Lab 1**, as the data and
 the artifacts that we will be using in this Lab need to be deployed on
 your Microsoft Sentinel instance.
 
@@ -18,20 +18,24 @@ your Microsoft Sentinel instance.
 
     <kbd>![](./media/image1.png)</kbd>
 
-1.  Select **MicrosoftSentinelWorkspace**.
+2. Select **MicrosoftSentinelWorkspace**.
 
     <kbd>![ computer ](./media/image2.png)</kbd>
+
+
 
 2.  On the left menu navigate to **Analytics** and select **Rule
     template** section
 
     <kbd>![](./media/image3.png)</kbd>
 
+
 3.  Click on Rule templates tab and review the default analytics rules
     templates, then click on **Add filter** then select **Data
     Sources**.
 
     <kbd>![ computer ](./media/image4.png)</kbd>
+
 
 4.  Check **Security Events via Legacy Agents**, select **Apply**. Now
     review all the analytic rules on the above data source.
@@ -40,16 +44,17 @@ your Microsoft Sentinel instance.
 
     <kbd>![ computer ](./media/image6.png)</kbd>
 
-5.  In the rule search bar type **Anomalous RDP Login** for the rule
+
+5.  In the rule search bar type `Anomalous RDP Login` for the rule
     name. Select the rule and open the side panel.
 
     <kbd>![ computer ](./media/image7.png)</kbd>
 
+
 6.  To review the rule logic and possible configuration options, in the
     right lower corner press **Create rule**.
 
-    **Note** - If the Create rule button does not appear, ensure the
-    panel is enabled from the right side of the screen.
+    > **Note** - If the Create rule button does not appear, ensure the panel is enabled from the right side of the screen.
 
     <kbd>![ computer ](./media/image8.png)</kbd>
 
@@ -58,10 +63,18 @@ your Microsoft Sentinel instance.
 
     <kbd>![](./media/image9.png)</kbd>
 
-8.  On the Automated response tab, click on **+ Add new** to create new
-    Automation rule by referring to the image shown below.
+8.  On the Automated response tab, click on **+ Add new** provide the below details and click on the **Apply** button.
+    * Automation rule name - `AutoRule 1`
+    * Trigger - **When incident is created**
+    * Actions - Assign owner - **MOD Administrator**
 
     <kbd>![ computer ](./media/image10.png)</kbd>
+
+    <font color=darkred>
+
+    > **Note** - If while creating the Automation rule, you get the error **Unknown analytic rule. A different analytic rule must be selected**, then create without automation rule and then **Edit** the Rule again to create the automation rule
+
+    </font>
 
 9.  After you reviewed the rule configuration options, close this page
     and navigate back to the main **Microsoft Sentinel Overview**
@@ -132,12 +145,7 @@ rule** in Microsoft Sentinel.
 
     <kbd>![](./media/image18.png)</kbd>
 
-17. In the template screen notice the status as Enabled as this rule
-    template enabled by default.
-
-    <kbd>![](./media/image19.png)</kbd>
-
-18. From the detail panel, review the details for the **Advanced
+3. From the detail panel, review the details for the **Advanced
     Multistage Attack Detection** rule . Stay on the same page for next
     exercise.
 
@@ -153,96 +161,97 @@ stich together into high severity incidence:
 
 ## Task 4: Create Microsoft Sentinel custom analytics rule
 
-1.  In the left menu click on the **Logs** close the pop-up and navigate
-    to the search **Canvas**.
-
-    > **Note**: in this lab we are using custom logs that replace the Out-off-the-box tables.
+1.  In the left menu click on the **Logs** close the pop-ups and navigate to the **New Query 1** window.
 
     <kbd>![](./media/image21.png)</kbd>
 
     <kbd>![](./media/image22.png)</kbd>
 
-19. To check if this operations are being captured as part of your
+2. To check if this operations are being captured as part of your
     collection strategy, run the search query below to see the list of
     activities Microsoft Sentinel captured in the last 24hr
 
-    ```OfficeActivity_CL | distinct Operation_s```
+    `OfficeActivity_CL | distinct Operation_s`
 
-20. You will be able to see the **New-InboxRule** operation is indeed
+
+    > **Note** - If no results appear, then change the Time range to **Last 48 hours**
+
+
+3. You will be able to see the **New-InboxRule** operation is indeed
     captured in your logs.
 
     <kbd>![](./media/image23.png)</kbd>
 
-21. Navigate to the **Analytics** from the navigation bar. In the top
+4. Navigate to the **Analytics** from the navigation bar. In the top
     bar click on **+Create** and select **scheduled query Rule**.
 
     <kbd>![ computer ](./media/image24.png)</kbd>
 
-22. On the **Analytics rule wizard - Create a new Scheduled rule** page,
+5. On the **Analytics rule wizard - Create a new Scheduled rule** page,
     provide the below details.
 
-    - In the Name type "**Malicious Inbox Rule - custom**".
+    - In the Name type `Malicious Inbox Rule - custom`.
 
-    - In the rule **Description** enter **This rule is detecting on
-      delete all traces of phishing email from user mailboxes.**
-
-    - In the **Tactics and techniques**
-      select **Persistence **and** Defence Evasion**.
+    - In the rule **Description** enter `This rule is detecting on
+      delete all traces of phishing email from user mailboxes.`
 
     - In the rule **Severity** select **medium**.
 
-    - Click **Next: SET rule logic\>**.
+    - In the **MITRE ATT&CK**
+      select **Persistence **and** Defence Evasion**.
+
+     - Click **Next: SET rule logic\>**.
 
     <kbd>![ computer ](./media/image25.png)</kbd>
 
-23. In the **Rule logic** page, review and copy the query from the file
-    **Lab3_analytics_rule_query.txt** given in **C:\Labfiles\\**
+6. In the **Rule logic** page, review and copy the query from the file
+    **Lab3_analytics_rule_query.txt** given in `C:\Labfiles`
 
-24. We can view the rule creation estimating by pressing **Test with
+7. We can view the rule creation estimating by pressing **Test with
     current data** in the right side.
 
     <kbd>![ computer ](./media/image26.png)</kbd>
 
-25. You will be able to see the number of hits.
+    > **Note** If the Results simulation
+    is not visible toward the side, then scroll down
+
+8. You will be able to see the number of hits.
 
     <kbd>![ graph ](./media/image27.png)</kbd>
 
-26. Under the **Alert enrichment** expand the **Entity mapping** section
-    that will allow us to map our fields to well-known categories:
+9. Under the **Alert enrichment** expand the **Entity mapping** section
+    and click on **+ Add new entity**
 
     <kbd>![ computer ](./media/image28.png)</kbd>
 
-- In the **Entity type** open the supported list of entities and
-  select **Account**.
+    - In the **Entity type** open the supported list of entities and
+    select **Account**.
 
-    <kbd>![ computer Description automatically
-  generated](./media/image29.png)</kbd>
+    - From the **Identifier** dropdown menu select **FullName** and from
+    **Value** drop down menu select **UserId\_\_s.**
 
-- From the **Identifier** dropdown menu select **FullName** and from
-  **Value** drop down menu select **UserId\_\_s.**
+        <kbd>![ computer Description automatically
+    generated](./media/image30.png)</kbd>
 
-    <kbd>![ computer Description automatically
-  generated](./media/image30.png)</kbd>
+    - Click **+ Add new entity** and this time select **Host** entity. From
+    **Identifier** dropdown menu select **FullName** and from **Value**
+    dropdown menu select **OriginatingServer_s**
 
-- Click **+ Add new entity** and this time select **Host** entity. From
-  **Identifier** dropdown menu select **FullName** and from **Value**
-  dropdown menu select **OriginatingServer_s**
-
-- Click**+ Add new entity**, select **IP** from **Entity type** dropdown
-  menu, in the **Identifier** select **Address** and for **Value**
-  select **ClientIPAddress** value.
+    - Click **+ Add new entity**, select **IP** from **Entity type** dropdown
+    menu, in the **Identifier** select **Address** and for **Value**
+    select **ClientIPAddress** value.
 
     <kbd>![ computer ](./media/image31.png)</kbd>
 
-27. Expand the **Alert details** feature and create custom **Alert Name
+10. Expand the **Alert details** feature and create custom **Alert Name
     Format.**
 
-- In the **Alert Name Format** enter the dynamic title **"Malicious
-  Inbox Rule, affected user {{UserId\_\_s}}"**
+- In the **Alert Name Format** enter the dynamic title `Malicious
+  Inbox Rule, affected user {{UserId\_\_s}}`
 
     <kbd>![ computer ](./media/image32.png)</kbd>
 
-28. Scroll down and in the **Query scheduling** set the **run query
+11. Scroll down and in the **Query scheduling** set the **run query
     every** to **5 minutes** and the **Lookup data to last 12
     Hours** (This scheduling might not be ideal for production
     environment and should be tune)</kbd>. If you deployed the lab more than
@@ -250,37 +259,37 @@ stich together into high severity incidence:
 
     <kbd>![ computer ](./media/image33.png)</kbd>
 
-29. In the **Suppression** leave it to **Off**. Click
+12. In the **Suppression** leave it to **Off**. Click
     the **Next:Incident settings**\>.
 
     <kbd>![ computer ](./media/image34.png)</kbd>
-
-30. To reduce the number of alerts, **implement Alert
+13. To reduce the number of alerts, **implement Alert
     grouping** feature. To do so, follow the steps below:
 
-- In the **Incident settings** under **Alert grouping** change it
-  to **Enabled**.
+    - In the **Incident settings** under **Alert grouping** change it
+    to **Enabled**.
 
-- Modify the **Limit the group to alerts created within the selected
-  time frame** to **12 hours**.
+    - Modify the **Limit the group to alerts created within the selected
+    time frame** to **12 hours**.
 
-- Select the **Grouping alerts into a single incident if the selected
-  entity types and details matches** and select the **Account** and
-  Alert detail as **Name**.
+    - Select the **Grouping alerts into a single incident if the selected
+    entity types and details matches** and select the **Account** and
+    Alert detail as **Name**.
 
     <kbd>![](./media/image35.png)</kbd>
 
-31. Click on **Next: Automated response** and also
+14. Click on **Next: Automated response** and also
     press **Next:Review** and **Create** this newly analytics rule.
 
     <kbd>![ computer ](./media/image36.png)</kbd>
 
-32. On the **Review + create** tab, review the details and then click on
+15. On the **Review + create** tab, review the details and then click on
     **Save** button.
 
     <kbd>![ computer ](./media/image37.png)</kbd>
 
     <kbd>![ computer ](./media/image38.png)</kbd>
+    
 
 ## Task 5: Review resulting security incident
 
@@ -295,8 +304,8 @@ analytics rule.
 
     <kbd>![ computer ](./media/image39.png)</kbd>
 
-33. Locate a new incident with title **"Malicious Inbox Rule, affected
-    user `AdeleV@contoso.OnMicrosoft.com`"** notice that the name adapt
+33. Locate a new incident with title **Malicious Inbox Rule, affected
+    user `AdeleV@contoso.OnMicrosoft.com** notice that the name adapt
     and the effected user name added to the incident name.
 
     <kbd>![ computer ](./media/image40.png)</kbd>
@@ -317,7 +326,7 @@ analytics rule.
 
     <kbd>![](./media/image43.png)</kbd>
 
-37. Click on the Entities tab to review the names of the Entities
+37. Click on the **Entities** tab to review the names of the Entities
     associated with the incident.
 
     <kbd>![ computer ](./media/image44.png)</kbd>
@@ -347,7 +356,7 @@ analytics rule.
 
     <kbd>![ computer ](./media/image48.png)</kbd>
 
-3.  On the left menu navigate to Incident page and select the **Sign-ins from IPs that attempt sign-ins to disabled accounts** incident and
+3.  On the left menu navigate to **Incident** page and select the **Sign-ins from IPs that attempt sign-ins to disabled accounts** incident and
     on the right pane you can see the incident preview with the high level information about the incident.
 
     <kbd>![](./media/image49.png)</kbd>
@@ -431,6 +440,7 @@ analytics rule.
 20. You will be able to review the execution steps.
 
     <kbd>![](./media/image66.png)</kbd>
+
 
 21. From the Azure portal go to **Home** \> **Microsoft
     Sentinel** \> **SwrkXXXXXXX**. In the left navigation click
