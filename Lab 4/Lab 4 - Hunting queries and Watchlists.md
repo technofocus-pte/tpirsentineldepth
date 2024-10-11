@@ -32,22 +32,22 @@ Microsoft Sentinel instance.
     search for `Microsoft Sentinel` and
     click on **Microsoft Sentinel**.
 
-    <kbd>![](./media/image1.png)</kbd>
+    ![](./media/image1.png)
 
 2.  Select **SwrkXXXXXXX**.
 
-    <kbd>![A screenshot of a chat Description automatically
-generated](./media/image2.png)</kbd>
+    ![A screenshot of a chat Description automatically
+generated](./media/image2.png)
 
 3.  Now click on **Hunting** and then select the **Queries** tab.
 
-    <kbd>![](./media/image3.png)</kbd>
+    ![](./media/image3.png)
 
 4.  In the hunting page, we can see that **Microsoft Sentinel** provides
     built-in **hunting queries** to kick start the proactive hunting
     process.
 
-    <kbd>![](./media/image4.png)</kbd>
+    ![](./media/image4.png)
    
 5.  On the metric bar we can see statistics about how many queries are
     "**active**" and have the required data sources to run in your
@@ -57,8 +57,8 @@ generated](./media/image2.png)</kbd>
     of **Livestream results** and **bookmarks** created during the
     hunting process.
 
-    <kbd>![A screenshot of a computer Description automatically
-generated](./media/image5.png)</kbd>
+    ![A screenshot of a computer Description automatically
+generated](./media/image5.png)
 ![alt text](image.png)
 
 6.  On the top action bar, shown in the above diagram, we can find
@@ -68,24 +68,24 @@ generated](./media/image5.png)</kbd>
     get results faster, it helps to **filter** down the set of queries
     to the specific set you need to run.
 
-    <kbd>![A screenshot of a computer Description automatically
-generated](./media/image6.png)</kbd>
+    ![A screenshot of a computer Description automatically
+generated](./media/image6.png)
 
 7.  Microsoft Sentinel provides many different attributes to filter down
     to just the queries you want to run. To filter by **MITRE
     technique**, click **Add filter**, select **Techniques.**
 
-    <kbd>![A screenshot of a computer Description automatically
-generated](./media/image7.png)</kbd>
+    ![A screenshot of a computer Description automatically
+generated](./media/image7.png)
 
 8.  In the **Techniques** value field, only
     select **T1098 -** **Account Manipulation** and click **Apply**.
 
-    <kbd>![A screenshot of a computer Description automatically
-generated](./media/image8.png)</kbd>
+    ![A screenshot of a computer Description automatically
+generated](./media/image8.png)
 
-    <kbd>![A screenshot of a computer Description automatically
-generated](./media/image9.png)</kbd>
+    ![A screenshot of a computer Description automatically
+generated](./media/image9.png)
 
 9.  Review all the queries in the table using this technique. In this
     phase we can multi-select all of queries run them as a batch. To do
@@ -99,22 +99,22 @@ generated](./media/image9.png)</kbd>
     > **Note**: In some cases, you will need to modify the selected time range
     based on the time you deploy the lab to get query results.
 
-    <kbd>![](./media/image10.png)</kbd>
+    ![](./media/image10.png)
   
 11. Once you have **Run selected queries**, the results start popping on
     the screen. In our case we immediately spot that the **Adding
     credentials to legitimate OAuth Applications** query returns several
     results.
 
-    <kbd>![A screenshot of a computer Description automatically
-generated](./media/image11.png)</kbd>
+    ![A screenshot of a computer Description automatically
+generated](./media/image11.png)
 
 12. Select this query and in the right pane press on **View query
     results**. This will navigate us to the log analytics screen to view
     the hunting query content and run it.
 
-    <kbd>![A screenshot of a computer Description automatically
-generated](./media/image12.png)</kbd>
+    ![A screenshot of a computer Description automatically
+generated](./media/image12.png)
 
 
 13. On the **Logs** screen, once the hunting query finishes executing,
@@ -122,8 +122,8 @@ generated](./media/image12.png)</kbd>
     columns. From high overview we can see that we have the
     actor **IP** and the **username** that run this operation.
 
-    <kbd>![A screenshot of a computer Description automatically
-generated](./media/image13.png)</kbd>
+    ![A screenshot of a computer Description automatically
+generated](./media/image13.png)
 
 
 14. Expand one of the results and check the fields. As you can see, we
@@ -131,7 +131,7 @@ generated](./media/image13.png)</kbd>
     and type the IP, username of the actor and other relevant
     information that help us understand the specific action.
 
-    <kbd>![](./media/image14.png)</kbd>
+    ![](./media/image14.png)
 
 
 Our SOC analysts needs to know which application from all the above
@@ -158,8 +158,8 @@ the bookmark, or attach the bookmark to an existing incident.
     left-hand side of the table. Click **Add bookmark** in the action
     menu just about the results table.
 
-    <kbd>![A screenshot of a computer Description automatically
-generated](./media/image15.png)</kbd>
+    ![A screenshot of a computer Description automatically
+generated](./media/image15.png)
 
 2.  On the right-hand bookmark pane modify the values as following.
 
@@ -177,10 +177,10 @@ generated](./media/image15.png)</kbd>
 
     - Click on **Create** at the bottom of the blade to create the bookmark.
 
-    <kbd>![A screenshot of a computer screen Description automatically
-generated](./media/image16.png)</kbd>
+    ![A screenshot of a computer screen Description automatically
+generated](./media/image16.png)
 
-    <kbd>![Screenshot](./media/image17.png)</kbd>
+    ![Screenshot](./media/image17.png)
 
 # Task 3 - Create a watchlist
 
@@ -193,19 +193,19 @@ in your search, detection rules, threat hunting, and response playbooks.
     search for `Microsoft Sentinel` and
     click on **Microsoft Sentinel**.
 
-    <kbd>![A screenshot of a computer service Description automatically
-generated](./media/image18.png)</kbd>
+    ![A screenshot of a computer service Description automatically
+generated](./media/image18.png)
 
 2.  Select **SwrkXXXXXXX**.
 
-    <kbd>![A screenshot of a computer Description automatically
-generated](./media/image19.png)</kbd>
+    ![A screenshot of a computer Description automatically
+generated](./media/image19.png)
 
 3.  Now click on **Watchlist** under Configurations, then click
     on **+ New**.
 
-    <kbd>![A screenshot of a computer Description automatically
-generated](./media/image20.png)</kbd>
+    ![A screenshot of a computer Description automatically
+generated](./media/image20.png)
 
 4.  In the watchlist wizard enter the following and click ***Next:
     Source***:
@@ -217,30 +217,30 @@ generated](./media/image20.png)</kbd>
 
     - Watchlist Alias: **PenTestIPaddresses**
 
-    <kbd>![A screenshot of a computer Description automatically
-generated](./media/image21.png)</kbd>
+    ![A screenshot of a computer Description automatically
+generated](./media/image21.png)
 
 5.  In the watchlist wizard, upload the
     file **C:\Labfiles\Lab4_IPAddresses.csv** from your desktop,
     under **SearchKey**, select **IPAddress**, review the **File
     Preview** and click **Next: Review and Create**.
 
-    <kbd>![A screenshot of a computer Description automatically
-generated](./media/image22.png)</kbd>
+    ![A screenshot of a computer Description automatically
+generated](./media/image22.png)
 
 6.  On the Review + create tab, click on **Create** to finish the
     wizard.
 
-    <kbd>![A screenshot of a computer Description automatically
-generated](./media/image23.png)</kbd>
+    ![A screenshot of a computer Description automatically
+generated](./media/image23.png)
 
-    <kbd>![Screenshot](./media/image24.png)</kbd>
+    ![Screenshot](./media/image24.png)
 
 7.  You should be back on the **Watchlist** page, click
     on **Refresh** button to view the newly created watchlist.
 
-    <kbd>![A screenshot of a computer Description automatically
-generated](./media/image25.png)</kbd>
+    ![A screenshot of a computer Description automatically
+generated](./media/image25.png)
 
 
 8.  The watchlist data takes about **3-5 minute** to be available in the
@@ -248,12 +248,12 @@ generated](./media/image25.png)</kbd>
     click on **View in Log Analytics**. It might take a few minutes to
     show up.
 
-    <kbd>![A screenshot of a computer Description automatically
-generated](./media/image26.png)</kbd>
+    ![A screenshot of a computer Description automatically
+generated](./media/image26.png)
 
 9.  On the Logs details, the Results should appear as shown in below
     image.
 
-    <kbd>![](./media/image27.png)</kbd>
+    ![](./media/image27.png)
 
 Congratulations, you have completed Lab 4!
