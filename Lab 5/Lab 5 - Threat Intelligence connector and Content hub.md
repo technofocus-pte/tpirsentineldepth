@@ -31,21 +31,18 @@ licensing.
 3.  Click on **Data Connectors** under Configuration select **Microsoft
     Defender Threat Intelligence (Preview)**.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image3.png)
+    ![](./media/image3.png)
 
 
 4.  On the bottom right pane click on **Open connector page**
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image4.png)
-![alt text](image.png)
+    ![](./media/image4.png)
+
 
 5.  Review the data received and confirm that the connector is already
     ingesting indicators.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image5.png)
+    ![](./media/image5.png)
 
 6.  Close the **Microsoft Defender Threat Intelligence
     (Preview)** Connector page, to return to the Microsoft Sentinel home
@@ -66,8 +63,7 @@ TI menu to allow us to search, tag and manage the lifecycle of IOCs.
 2.  Select one IOC from the main pane and notice that the right pane
     changed accordingly and present the metadata of the selected IOC.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image7.png)
+    ![](./media/image7.png)
 
 3.  On the top area of the main blade, we can filter the list of the
     IOC's based on a specific parameters. In our case, we only ingested
@@ -75,8 +71,7 @@ generated](./media/image7.png)
     based on different types. If we ingested IOC's from multiple TI data
     sources, the **source** filter allows us to slice it.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image8.png)
+    ![](./media/image8.png)
 
 ### Task 3 - Review the TI data into Microsoft Sentinel Logs interface.
 
@@ -89,29 +84,23 @@ Intelligence menu on the left navigation menu.
     the Log Analytics query interface. On the query interface we can see
     on the left side the tables with the relevant fields.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image9.png)
+    ![](./media/image9.png)
 
-2.  Microsoft Sentinel built-in tables have a predefined schema, to be
-    able to see the **ThreatIntelligenceIndicator** schema, run the
-    following query:
+2.  Microsoft Sentinel built-in tables have a predefined schema, to be able to see  the **ThreatIntelligenceIndicator** schema, run the following query:
 
-**[ThreatIntelligenceIndicato]r**
+    
+    `ThreatIntelligenceIndicator
+    | getschema`
 
-`| getschema`
-
-    ![A screenshot of a computer Description automatically
-generated](./media/image10.png)
+    ![](./media/image10.png)
 
 3.  Let's explore and delve into the TI table. Run the following query
     which takes 10 records from the table:
 
-`ThreatIntelligenceIndicator`
+    `ThreatIntelligenceIndicator
+    | take 10`
 
-`| take 10`
-
-    ![A screenshot of a computer Description automatically
-generated](./media/image11.png)
+    ![](./media/image11.png)
 
 4.  To understand if a specific IOC is active, we need to have a closer
     look at the following columns:
@@ -120,8 +109,7 @@ generated](./media/image11.png)
 
     - **Acitve**
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image12.png)
+    ![](./media/image12.png)
 
 ### Task 4 - Adding new TI IOC manually in Microsoft Sentinel Threat intelligence menu
 
@@ -155,34 +143,29 @@ to correlate and detect interaction with this IOC.
 
     - **Valid until** two weeks from today.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image14.png)
+    ![](./media/image14.png)
 
     ![Screenshot](./media/image15.png)
 
 3.  Notice to the newly created IOC on the TI menu.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image16.png)
+    ![](./media/image16.png)
 
 4.  Be aware that every new IOC added in the TI menu, will be
     automatically added to the ThreatIntelligenceIndicator table. You
     can validate it by opening the **Logs** menu and run the query
     below.
 
-**Note** -- It can take about 5 mins to have the result shown.
+    > **Note** -- It can take about 5 mins to have the result shown.
 
-`ThreatIntelligenceIndicator`
+    `ThreatIntelligenceIndicator
+    | search "http://phishing.com"`
 
-`| search "http://phishing.com"`
-
-    ![A screenshot of a computer Description automatically
-generated](./media/image17.png)
+    ![](./media/image17.png)
 
 5.  Select the newly created manual IOC and press **Delete** button.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image18.png)
+    ![](./media/image18.png)
 
 ### Task 5 - Reviewing Analytics Rules based on Threat Intelligence data
 
@@ -193,14 +176,12 @@ generated](./media/image18.png)
 
 2.  Click on **Add filter** and then select the **Data Sources** filter.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image20.png)
+    ![](./media/image20.png)
 
 3.  Select **Microsoft Defender Threat Intelligence
     (Preview).** Click **Apply** to apply the filter.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image21.png)
+    ![](./media/image21.png)
 
 4.  As you can see, there is a long list of resulting alert templates.
     These all will correlate your different data sources with the IOCs
@@ -208,8 +189,7 @@ generated](./media/image21.png)
     detect any trace of malicious indicators of compromise in your
     organization's logs.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image22.png)
+    ![](./media/image22.png)
 
 5.  As you may know, it is free to enable analytics rules in Microsoft
     Sentinel, so the best practice is to enable all the ones that apply
@@ -220,17 +200,14 @@ generated](./media/image22.png)
 1.  From the Microsoft Sentinel page, click on **Analytics** and click
     on **Rule Templates** tab. Clear previously applied filters if any.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image23.png)
+    ![](./media/image23.png)
 
 2.  Click on Add filter and then choose **Rule Type** filter and
     select **Threat Intelligence**.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image24.png)
+    ![](./media/image24.png)
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image25.png)
+    ![](./media/image25.png)
 
 3.  The resulting rule template matches Microsoft-generated threat
     intelligence data with the logs you have ingested into Microsoft
@@ -244,18 +221,15 @@ generated](./media/image25.png)
     are supported (at the time of writing, these are CEF, Syslog and
     DNS). Click on **Create rule**.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image27.png)
+    ![](./media/image27.png)
 
 5.  In the wizard, click on **Review and Create**.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image28.png)
+    ![](./media/image28.png)
 
 6.  Click on the **Save** button to create the Rule
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image29.png)
+    ![](./media/image29.png)
 
     ![Screenshot](./media/image30.png)
 
@@ -265,51 +239,43 @@ generated](./media/image29.png)
     on **Workbooks** under **Threat management** and then click on **Add
     workbook**.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image31.png)
+    ![](./media/image31.png)
 
 2.  You will find some pre-built visualizations that show you the
     indicators imported into Sentinel over time, by type and provider.
     To modify or add a new chart, select the **Edit** button at the top
     of the page to enter editing mode for the workbook.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image32.png)
+    ![](./media/image32.png)
 
 3.  Add a new chart of threat indicators by threat type. To do this,
     scroll to the very bottom of the page and select **Add** \> **Add
     Query**.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image33.png)
+    ![](./media/image33.png)
 
 4.  Add the following text to the Log Analytics workspace Log Query text
     box and then click on the **Run Query** button.
 
-`ThreatIntelligenceIndicator`
+    `ThreatIntelligenceIndicator
+    | summarize count() by ThreatType`
 
-`| summarize count() by ThreatType`
-
-    ![A screenshot of a computer Description automatically
-generated](./media/image34.png)
+    ![](./media/image34.png)
 
 5.  In the Visualization drop-down, select **Bar chart**.
 
-    ![A screenshot of a bar chart Description automatically
-generated](./media/image35.png)
+    ![a bar chart ](./media/image35.png)
 
 6.  Select the **Done editing** button. You've created a new chart for
     your workbook.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image36.png)
+    ![](./media/image36.png)
 
 7.  Click on the **Save** button and on the Workbook details tab,
     provide the Resource group details and then click on
     the **Apply** button.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image37.png)
+    ![](./media/image37.png)
 
     ![Screenshot](./media/image38.png)
 
@@ -322,49 +288,41 @@ generated](./media/image37.png)
     search for `Microsoft Sentinel` and
     click on **Microsoft Sentinel**.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image39.png)
+    ![](./media/image39.png)
 
 2.  Select **SwrkXXXXXXX**.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image40.png)
+    ![](./media/image40.png)
 
 3.  Now click **Content hub** under **Content Management**.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image41.png)
+    ![](./media/image41.png)
 
 4.  In the search bar, type `Cloudflare`.
     You will see a single result corresponding to Cloudflare solution.
     You could also search using the filtering options at the top.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image42.png)
+    ![](./media/image42.png)
 
 5.  Select the Cloudflare solution. As you can see on the right pane,
     here we have information about this solution, like category,
     pricing, content types included, solution provider, version and also
     who supports it. Click **Install**.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image43.png)
+    ![](./media/image43.png)
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image44.png)
+    ![](./media/image44.png)
 
 6.  Click on the **Manage** button.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image45.png)
+    ![](./media/image45.png)
 
 7.  Notice the different artifacts that are included in this
     solution: **Data Connector, Parser, Workbook, Analytics
     Rules** and **Hunting Queries**. Each Solution can contain a
     different set of artifacts.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image46.png)
+    ![](./media/image46.png)
 
 8.  Close the **Cloudflare for Microsoft Sentinel** information page and
     you can navigate to other solutions. In the next exercise, we will
@@ -375,8 +333,7 @@ generated](./media/image46.png)
 1.  From the Microsoft Sentinel portal, navigate to **Content
     hub** under **Content Management**
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image47.png)
+    ![](./media/image47.png)
 
 2.  In the search bar, type `dynamics 365
     CE`. Select on the **Dynamics 365 CE
@@ -384,73 +341,62 @@ generated](./media/image47.png)
     being added by this solution (Data Connector, Analytics Rules,
     Workbook, Hunting Queries and Watchlists).
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image48.png)
+    ![](./media/image48.png)
 
 3.  Click on **Create**.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image49.png)
+    ![](./media/image49.png)
 
 4.  On the **Create Microsoft Sentinel Solution for Dynamics 365 CE Apps
     (Preview)** page provide the below details.
 
-a\. Subscription -- **Azure Pass -- Sponsorship**
+    a\. Subscription -- **Azure Pass -- Sponsorship**
 
-b\. Resource group -- **RG4Sentinel**
+    b\. Resource group -- **RG4Sentinel**
 
-c\. Workspace -- **Swrk33114717**
+    c\. Workspace -- **SwrkXXXXXX**
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image50.png)
+    ![](./media/image50.png)
 
 5.  Click on **Next** and review the information on
     the **Workbooks** tab.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image51.png)
+    ![](./media/image51.png)
 
 6.  Click on **Next:** and review the information on **Analytics** tab.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image52.png)
+    ![](./media/image52.png)
 
 7.  Notice the different **Analytics Rules** that will be added to your
     workspace. Click **Next.**
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image53.png)
+    ![](./media/image53.png)
 
 8.  On the **Hunting Queries** tab, notice the Hunting Queries included
     in the solution. Click **Next: Review + create**.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image54.png)
+    ![](./media/image54.png)
 
 9.  A final validation will run. If everything is ok, click
     on **Create** button. The deployment will kick off and finish in a
     few seconds.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image55.png)
+    ![](./media/image55.png)
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image56.png)
+    ![](./media/image56.png)
 
 ### Task 3 - Reviewing and enabling deployed artifacts
 
 1.  Navigate back to **Microsoft Sentinel** home page and click
     on **Analytics**, and select the **Rule Templates** tab.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image57.png)
+    ![](./media/image57.png)
 
 2.  Type `Dynamics` in the search box. You
     should see **16** different analytics rules that look at **Dynamics
     365 data**.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image58.png)
+    ![](./media/image58.png)
 
 3.  Notice that these rules are available as **templates**. In a
     real-world environment, you would need to create them in order to
@@ -461,23 +407,20 @@ generated](./media/image58.png)
     rules the workbook exists as a template. This should be empty unless
     you have enabled the Dynamics 365 connector.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image59.png)
+    ![](./media/image59.png)
 
 5.  Navigate to **Hunting**, go to **Queries** tab and search
     for `dynamics 365` You should see 2
     new queries that use data coming from Dynamics 365.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image60.png)
+    ![](./media/image60.png)
 
 6.  Navigate to **Watchlist** under Configuration. Search
     for `d365`. Notice you have two new
     watchlists.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image61.png)
+    ![](./media/image61.png)
 
 Congratulations, you have completed Lab 5!
 
-** **
+
