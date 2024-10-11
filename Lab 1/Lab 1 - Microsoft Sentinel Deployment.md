@@ -14,7 +14,7 @@ Sentinel All In One**
 
 1.  Login to the **Lab VM** using the credentials provided on the Resources/Home tab of the Lab interface.
 
-2.  In your Lab VM, open Microsoft Edge browser and open the following link: ```http://www.microsoftazurepass.com```
+2.  In your Lab VM, open Microsoft Edge browser and open the following link: (http://www.microsoftazurepass.com)
 
 3.  On **Ready to get started?** page, click on the **Start** button.
 
