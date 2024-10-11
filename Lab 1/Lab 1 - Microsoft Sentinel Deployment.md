@@ -18,13 +18,13 @@ Sentinel All In One**
 
 3.  On **Ready to get started?** page, click on the **Start** button.
 
-    <kbd>![](./media/image1a.png)</kbd>
+    ![](./media/image1a.png)
 
 
 4. Enter the **Office 365 Tenant credentials** provided on the **Resources/Home** tab of the Lab interface to complete the sign in process
 
-    <kbd>![A login screen with a blue and red box Description automatically
-generated](./media/image2a.png)</kbd>
+    ![A login screen with a blue and red box Description automatically
+generated](./media/image2a.png)
 
 
     > <font color=Orangered> **Note**:  Do not use your **Company/Work Account** to login to redeem the Azure Pass, another Azure Pass will not be issued.</font>
@@ -33,134 +33,134 @@ generated](./media/image2a.png)</kbd>
 5.  On **The following Microsoft Account will be used for Azure
     pass** page, click on **Confirm Microsoft Account** button.
 
-    <kbd>![A screenshot of a computer Description automatically
-generated](./media/image6a.png)</kbd>
+    ![A screenshot of a computer Description automatically
+generated](./media/image6a.png)
 
 6. Enter the Promocode provided in the lab environment in the **Enter
     Promo code** field, then enter the characters under the **Enter the
     characters you see** field and click on the **Submit** button.
 
-    <kbd>![A screenshot of a computer Description automatically
-generated](./media/image7a.png)</kbd>
+    ![A screenshot of a computer Description automatically
+generated](./media/image7a.png)
 
 7. **We are processing your request** page will appear, it may take few
     seconds to process the redemption.
 
-    <kbd>![A screenshot of a computer Description automatically
-generated](./media/image8a.png)</kbd>
+    ![A screenshot of a computer Description automatically
+generated](./media/image8a.png)
 
 8. Enter the correct details in **Your Profile** page, tick all the
     check boxes, and then click on **Sign up** button.
 
-    <kbd>![A screenshot of a computer Description automatically
-generated](./media/image9a.png)</kbd>
+    ![A screenshot of a computer Description automatically
+generated](./media/image9a.png)
 
-    <kbd>![A screenshot of a computer Description automatically
-generated](./media/image10a.png)</kbd>
+    ![A screenshot of a computer Description automatically
+generated](./media/image10a.png)
 
-    <kbd>![A screenshot of a computer Description automatically
-generated](./media/image11a.png)</kbd>
+    ![A screenshot of a computer Description automatically
+generated](./media/image11a.png)
 
 
 9.  Click on the **Next** button on the **More information
     required** prompt.
 
-    <kbd>![A screenshot of a microsoft azure application Description
-automatically generated](./media/image3a.png)</kbd>
+    ![A screenshot of a microsoft azure application Description
+automatically generated](./media/image3a.png)
 
 10.  Provide the credentials and then complete the MFA sign in
-    <kbd>![](./media/image4a.png)</kbd>
+    ![](./media/image4a.png)
 
 11.  Once the authentication is completed, click on the **Done** button you will be redirected to the
     Azure Pass redemption page.
-    <kbd>![](./media/image5a.png)</kbd>
+    ![](./media/image5a.png)
 
 12. On **Are you satisfied with your signup experience** window, enter
     your feedback and click on the **Submit** button.
 
-    <kbd>![](./media/image12a.png)</kbd>
+    ![](./media/image12a.png)
 
 14. It would automatically redirect you to the Azure Portal and now you
     are ready to use Azure services. On **Welcome to Microsoft
     Azure** dialog box, click on the **Maybe later** button.
 
-    <kbd>![](./media/image13a.png)</kbd>
+    ![](./media/image13a.png)
 
 **Task 2 - Configure Permissions on the Subscription**
 
 1.  In the **Azure Portal** ```https://portal.azure.com``` search box
     type ```subscriptions``` and then click **on Subscriptions**.
 
-    <kbd>![A screenshot of a computer Description automatically
-generated](./media/image14a.png)</kbd>
+    ![A screenshot of a computer Description automatically
+generated](./media/image14a.png)
 
 2.  From the list of Subscriptions select the **Azure Pass -
     Sponsorship**.
 
-    <kbd>![A screenshot of a computer Description automatically
-generated](./media/image15a.png)</kbd>
+    ![A screenshot of a computer Description automatically
+generated](./media/image15a.png)
 
 3.  On the **Azure Pass - Sponsorship** page click on **Access control
-    (IAM)</kbd>**, then click on **+ Add** drop-down and select **Add role
+    (IAM)**, then click on **+ Add** drop-down and select **Add role
     assignment**.
 
-    <kbd>![](./media/image16a.png)</kbd>
+    ![](./media/image16a.png)
 
 4.  On the Add role assignment page, under the **Privileged
     administrator roles** tab select **Contributor** and then click
     on **Next**.
 
-    <kbd>![A screenshot of a computer Description automatically
-generated](./media/image17a.png)</kbd>
+    ![A screenshot of a computer Description automatically
+generated](./media/image17a.png)
 
 5.  On the **Members** tab, click on **+ Select members**, then
     choose **your Office 365 Tenant credentials** and then click on
     the **Select** button.
 
-    <kbd>![A screenshot of a group of members Description automatically
-generated](./media/image18a.png)</kbd>
+    ![A screenshot of a group of members Description automatically
+generated](./media/image18a.png)
 
 6.  Click on **Review + assign** button.
 
-    <kbd>![](./media/image19a.png)</kbd>
+    ![](./media/image19a.png)
 
 7.  Click on **Review + assign** button again.
 
-    <kbd>![A screenshot of a computer Description automatically
-generated](./media/image20a.png)</kbd>
+    ![A screenshot of a computer Description automatically
+generated](./media/image20a.png)
 
 8.  You should get the notification as shown in below image.
 
-    <kbd>![A screenshot of a computer Description automatically
-generated](./media/image21a.png)</kbd>
+    ![A screenshot of a computer Description automatically
+generated](./media/image21a.png)
 
 9.  Click on the Role assignments tab to view the role assigned in the
     previous step. We can see the Users listed to whom
     the Contributor role was assigned.
 
-    <kbd>![A screenshot of a computer Description automatically
-generated](./media/image22a.png)</kbd>
+    ![A screenshot of a computer Description automatically
+generated](./media/image22a.png)
 
 **Task 3 - Registering required Resource providers**
 
 1.  While still on the Subscription page, from the left menu, click on
     the **Resource Providers** under Settings.
 
-    <kbd>![A screenshot of a computer Description automatically
-generated](./media/image23a.png)</kbd>
+    ![A screenshot of a computer Description automatically
+generated](./media/image23a.png)
 
 2.  In the search bar, type ```Microsoft.insight```,
     select **Microsoft.insight** from the list below and click on
     Register.
 
-    <kbd>![A screenshot of a computer Description automatically
-generated](./media/image24a.png)</kbd>
+    ![A screenshot of a computer Description automatically
+generated](./media/image24a.png)
 
 3.  A notification stating Successfully registered resource provider is
     obtained once the registration is successful.
 
-    <kbd>![A close-up of a document Description automatically
-generated](./media/image25a.png)</kbd>
+    ![A close-up of a document Description automatically
+generated](./media/image25a.png)
 
 4.  Repeat the steps to register the following Resource providers.
 
@@ -170,7 +170,7 @@ generated](./media/image25a.png)</kbd>
 
     - ```Microsoft.Logic```
 
-    <kbd>![](./media/image26a.png)</kbd>
+    ![](./media/image26a.png)
 
 **Task 4 - Security Admin role to be added to Tenant Administrator
 account**
@@ -178,43 +178,43 @@ account**
 1.  In the browser tab navigate
     to ```https://portal.azure.com/#view/Microsoft_AAD_UsersAndTenants/UserManagementMenuBlade/~/AllUsers``` 
 
-    <kbd>![A screenshot of a computer Description automatically
-generated](./media/image27a.png)</kbd>
+    ![A screenshot of a computer Description automatically
+generated](./media/image27a.png)
 
 2.  Select the **Assigned roles** under Manage and then click on **+ Add
     assignments.**
 
-    <kbd>![](./media/image28a.png)</kbd>
+    ![](./media/image28a.png)
 
 3.  Search and select `Security Administrator`, then click on
     the **Add** button.
 
-    <kbd>![](./media/image29a.png)</kbd>
+    ![](./media/image29a.png)
 
-    <kbd>![A close up of a sign Description automatically
-generated](./media/image30a.png)</kbd>
+    ![A close up of a sign Description automatically
+generated](./media/image30a.png)
 
 **Task 5 - Enabling the trial for Microsoft Defender for cloud**
 
 1.  While in the Azure Portal, click on the Portal menu or from the home
     page choose the Microsoft Defender for Cloud
 
-    <kbd>![](./media/image6.png)</kbd>
+    ![](./media/image6.png)
 
 2.  On the Notification – **You may be viewing limited information. To gettenant-wide visibility, click here ->** click on it.
 
-    <kbd>![](./media/image80.png)</kbd>
+    ![](./media/image80.png)
 
 3.  On the **Get permissions** page, choose the **Security Admin** and
     then click on **Get access** button.
 
-    <kbd>![](./media/image81.png)</kbd>
+    ![](./media/image81.png)
 
 4.  You should get the notification as shown in below images
 
-    <kbd>![](./media/image82.png)</kbd>
+    ![](./media/image82.png)
 
-    <kbd>![](./media/image83.png)</kbd>
+    ![](./media/image83.png)
 
 
 5.  Refresh the browser and then in **Microsoft Defender for Cloud** page, under the **General** section,
@@ -223,33 +223,33 @@ generated](./media/image30a.png)</kbd>
 
     > <font color=Orangered> **Note**: You may need to wait for a few minutes for the upgrade to complete.</font>
 
-    <kbd>![A screenshot of a computer Description automatically
-    generated](./media/image7.png)</kbd>
+    ![A screenshot of a computer Description automatically
+    generated](./media/image7.png)
 
 
 6.  On **Microsoft Defender for Cloud** page, navigate to **Management** section and click on **Environment settings.**
 
-    > <kbd>![A screenshot of a computer Description automatically generated](./media/image11.png)</kbd>
+    > ![A screenshot of a computer Description automatically generated](./media/image11.png)
 
 7.  Scroll down and then expand **Tenant Root Group** and then click on the **Azure Pass – Sponsorship** Subscription listed.
 
-    <kbd>![A screenshot of a computer Description automatically generated](./media/image12.png)</kbd>
+    ![A screenshot of a computer Description automatically generated](./media/image12.png)
 
 8.  Notice the Defender coverage is **11/12 plans** for the Subscription.
 
 9.  On **Settings | Defender plans** page, click on **Enable all plans.**
 
-    <kbd>![](./media/image13.png)</kbd>
+    ![](./media/image13.png)
 
 10.  Select **Microsoft Defender for APIs Plan 1** and then click on **Save** button. 
-    <kbd>![](./media/image14.png)</kbd>
+    ![](./media/image14.png)
 
 11.  Click on the **Save** button.
-    <kbd>![](./media/image15.png)</kbd>
+    ![](./media/image15.png)
 
 12.  You should get the notifications as shown in below image.
 
-<kbd>![](./media/image16.png)</kbd>
+![](./media/image16.png)
 
 **Task 6 - Deploy the Microsoft Sentinel.**
 
@@ -262,19 +262,19 @@ environment.
 2.  In the top search bar, type ```Microsoft Sentinel``` and click on
 **Microsoft Sentinel**.
 
-    <kbd>![A screenshot of a computer Description automatically
-generated](./media/image36.png)</kbd>
+    ![A screenshot of a computer Description automatically
+generated](./media/image36.png)
 
 3. In the **Microsoft Sentinel** screen, click **Create** at the top left.
 
-    <kbd>![A screenshot of a computer Description automatically
-generated](./media/image37.png)</kbd>
+    ![A screenshot of a computer Description automatically
+generated](./media/image37.png)
 
 4. You can choose to add **Microsoft Sentinel** to an existing **Log Analytics** **workspace** or build a new one. We will create a new one,
 so click on **Create a new workspace**.
 
-    <kbd>![A screenshot of a computer Description automatically
-generated](./media/image38.png)</kbd>
+    ![A screenshot of a computer Description automatically
+generated](./media/image38.png)
 
 5.  In the Create Log Analytics workspace page, fill out the form as
 follows:
@@ -289,90 +289,90 @@ follows:
 
     - Click **Review + create**.
 
-        <kbd>![](./media/image39.png)</kbd>
+        ![](./media/image39.png)
 
 6. Click **Create** after the validation completes. The creation takes a
     few seconds.
 
-    <kbd>![](./media/image40.png)</kbd>
+    ![](./media/image40.png)
 
 6. You will be redirected back to the **Add Microsoft Sentinel** to a
 workspace page, click on the **Refresh** button.
 
-    <kbd>![A screenshot of a computer Description automatically
-generated](./media/image41.png)</kbd>
+    ![A screenshot of a computer Description automatically
+generated](./media/image41.png)
 
 7. Select your workspace and click **Add** at the bottom.
 
-    <kbd>![](./media/image42.png)</kbd>
+    ![](./media/image42.png)
 
 8. You should receive notification as shown in below image
 
-    <kbd>![A screenshot of a computer Description automatically
-generated](./media/image43.png)</kbd>
+    ![A screenshot of a computer Description automatically
+generated](./media/image43.png)
 
 9. Your Microsoft Sentinel workspace is now ready to use!, Click on the **OK** button.
 
-    <kbd>![A screenshot of a computer Description automatically
-generated](./media/image44.png)</kbd>
+    ![A screenshot of a computer Description automatically
+generated](./media/image44.png)
 
 **Task 7: Deploy the Microsoft Sentinel Training Lab Solution**
 
-In this exercise you will deploy the Training Lab solution into your existing workspace. This will ingest pre-recorded data (~20 MBs)</kbd> and create several other artifacts that will be used during the exercises.
+In this exercise you will deploy the Training Lab solution into your existing workspace. This will ingest pre-recorded data (~20 MBs) and create several other artifacts that will be used during the exercises.
 
 1. In the Azure Portal ```http://portal.azure.com```, go to the top search
 bar and type ```Microsoft Sentinel Training```. Select the **Microsoft
-Sentinel Training Lab Solution (Preview)</kbd>**, a Marketplace item.
+Sentinel Training Lab Solution (Preview)**, a Marketplace item.
 
-    <kbd>![A screenshot of a computer Description automatically
-generated](./media/image45.png)</kbd>
+    ![A screenshot of a computer Description automatically
+generated](./media/image45.png)
 
 2. Read the solution description and click **Create** at the top.
 
-    <kbd>![A screenshot of a computer Description automatically
-generated](./media/image46.png)</kbd>
+    ![A screenshot of a computer Description automatically
+generated](./media/image46.png)
 
 3. In the **Basics** tab, select **Azure pass - Sponsorship** as the
 **Subscription**, **RG4Sentinel** as the **Resource Group** and
 ```SwrkXXXXXXX```  as the **Workspace**.
 
-    <kbd>![A screenshot of a computer Description automatically
-generated](./media/image47.png)</kbd>
+    ![A screenshot of a computer Description automatically
+generated](./media/image47.png)
 
 4. Optionally, review the different tabs (**Workbooks**, **Analytics**,
-**Hunting Queries**, **Watchlists**, **Playbooks**)</kbd> in the solution.
+**Hunting Queries**, **Watchlists**, **Playbooks**) in the solution.
 When ready, click on **Review + create**.
 
 5. Once validation is ok, click on **Create**. The deployment process takes
 about 15 minutes.
 
-    <kbd>![A screenshot of a computer Description automatically
-generated](./media/image48.png)</kbd>
+    ![A screenshot of a computer Description automatically
+generated](./media/image48.png)
 
     > **Note** – The deployment will take up to 15 minutes to complete.
 
 6. You can proceed ahead with the next exercise while the deployment is in
 progress.
 
-    <kbd>![A screenshot of a computer Description automatically
-generated](./media/image49.png)</kbd>
+    ![A screenshot of a computer Description automatically
+generated](./media/image49.png)
 
-    <kbd>![A screenshot of a computer Description automatically
-generated](./media/image50.png)</kbd>
+    ![A screenshot of a computer Description automatically
+generated](./media/image50.png)
 
 **Task 8 - Explore the Microsoft Sentinel dashboard**
 
 1.  In the top search bar, type ```Microsoft Sentinel``` and click on
 **Microsoft Sentinel**.
 
-    <kbd>![](./media/image51a.png)</kbd>
+    ![](./media/image51a.png)
 
 2.  On the Microsoft Sentinel screen, select the Log analytic workspace
     created during the deployment.
 
-    <kbd>![](./media/image52a.png)</kbd>
+    ![](./media/image52a.png)
 
-3.  The **Overview (Preview)</kbd>** page provides the Dashboard display
+3.  The **Overview (Preview)** page provides the Dashboard display
     details for the below.
 
     i. **Incidents**
@@ -383,26 +383,26 @@ generated](./media/image50.png)</kbd>
 
     iv. **Analytics.**
 
-    <kbd>![](./media/image53a.png)</kbd>
+    ![](./media/image53a.png)
 
 4.  **Incidents** details will populate once the incidents occur in the
     environment.
 
-    <kbd>![](./media/image54a.png)</kbd>
+    ![](./media/image54a.png)
 
 5.  The **Automation** rules that are create will appear under the
     Automation dashboard.
 
-    <kbd>![](./media/image55a.png)</kbd>
+    ![](./media/image55a.png)
 
 6.  The **Data** dashboard will display the Connector health and Data
     received
 
-    <kbd>![](./media/image56a.png)</kbd>
+    ![](./media/image56a.png)
 
 7.  The **Analytics** dashboard will display the details of Analytics rules.
 
-    <kbd>![](./media/image57a.png)</kbd>
+    ![](./media/image57a.png)
 
 **Task 9 – Create a custom Playbook**
 
@@ -414,66 +414,66 @@ lab.
 
 2.  Click on the Resource group **RG4Sentinel**.
 
-    <kbd>![](./media/image58a.png)</kbd>
+    ![](./media/image58a.png)
 
-3.  Click on **Access control (IAM)</kbd>**, then click on **+ Add** drop-down
+3.  Click on **Access control (IAM)**, then click on **+ Add** drop-down
     and select **Add role assignment**.
 
-    <kbd>![](./media/image59a.png)</kbd>
+    ![](./media/image59a.png)
 
 4.  On the Add role assignment page, under the **Privileged
     administrator roles** tab select **Owner** and then click
     on **Next**.
 
-    <kbd>![](./media/image60a.png)</kbd>
+    ![](./media/image60a.png)
 
 5.  On the **Members** tab, click on **+ Select members**, then
     choose **your Office 365 Tenant credentials** and then click on
     the **Select** button.
 
-    <kbd>![](./media/image61a.png)</kbd>
+    ![](./media/image61a.png)
 
 6.  Click on the **Next** button.
 
 7.  On the Conditions tab, click on the **Allow user to assign all roles
-    (highly privileged)</kbd>** radio button and click on **Review + assign**.
+    (highly privileged)** radio button and click on **Review + assign**.
 
-    <kbd>![](./media/image62a.png)</kbd>
+    ![](./media/image62a.png)
 
 8.  On the **Review + assign** tab, click on the **Review +
     assign** button.
 
-    <kbd>![](./media/image63a.png)</kbd>
+    ![](./media/image63a.png)
 
-    <kbd>![](./media/image64a.png)</kbd>
+    ![](./media/image64a.png)
 
 9.  From the **Microsoft Sentinel** navigation menu, go to **settings**.
     Select the **Settings** tab at the top of the page.
 
-    <kbd>![](./media/image65a.png)</kbd>
+    ![](./media/image65a.png)
 
 10. Scroll down and under **Playbook permissions**, select **Configure
     permissions**.
 
-    <kbd>![](./media/image66a.png)</kbd>
+    ![](./media/image66a.png)
 
 11. Select **RG4Sentinel** and select **Apply**.
 
-    <kbd>![](./media/image67a.png)</kbd>
+    ![](./media/image67a.png)
 
 12. You will see a message that you **Finished adding permissions**.
 
-    <kbd>![](./media/image68a.png)</kbd>
+    ![](./media/image68a.png)
 
 13. From the **Microsoft Sentinel** navigation menu,
     select **Automation**.
 
-    <kbd>![](./media/image69a.png)</kbd>
+    ![](./media/image69a.png)
 
 14. From the top menu, select **Create** \> **Playbook with incident
     trigger**.
 
-    <kbd>![](./media/image70a.png)</kbd>
+    ![](./media/image70a.png)
 
 15. Add the following details and click on **Next : Connections**.
 
@@ -485,39 +485,39 @@ lab.
 
     - Check the box near Enable diagnostics logs in log analytics.
 
-    <kbd>![](./media/image71a.png)</kbd>
+    ![](./media/image71a.png)
 
 16. Click on **Next: Review and create**.
 
-    <kbd>![](./media/image72a.png)</kbd>
+    ![](./media/image72a.png)
 
 17. Then click on **Create playbook** button.
 
-    <kbd>![](./media/image73a.png)</kbd>
+    ![](./media/image73a.png)
 
 18. Click on + under the Microsoft Sentinel Incident 
 
-    <kbd>![](./media/image74.png)</kbd>
+    ![](./media/image74.png)
 
 19.	Click on Add an action
  
-    <kbd>![](./media/image75.png)</kbd>
+    ![](./media/image75.png)
 
-20.	Search for ```Add comment to incident``` and select Add comment to incident (V3)</kbd> (Preview)</kbd>.
-    <kbd>![](./media/image76.png)</kbd>
+20.	Search for ```Add comment to incident``` and select Add comment to incident (V3) (Preview).
+    ![](./media/image76.png)
 
 21.	In the Incident ARM ID, type ```@triggerBody()?['object']?['id']```
 
 22.	In the comment section type - ```This comment marks the successful run of our custom playbook.```
 
 23.	If you do not see the step Connected to azuresentinel-customplaybook select Change Connection.
-    <kbd>![](./media/image77.png)</kbd>
+    ![](./media/image77.png)
 
 24.	Select azuresentinel-customplaybook.
-    <kbd>![](./media/image78.png)</kbd>
+    ![](./media/image78.png)
 
 25.	Click Save.
-    <kbd>![](./media/image79.png)</kbd>
+    ![](./media/image79.png)
 
 **Congratulations!!!!** You successfully created a playbook that adds the comment to any incidents. You can modify the steps according to your need in the flow designer to create custom automation flow.
 
@@ -529,39 +529,39 @@ the lab. This will allow the playbook to access Sentinel.
 1.  From the Azure Portal ```http://portal.azure.com``` click on the
     Portal menu and select **Resource Groups**.
 
-    <kbd>![](./media/image82a.png)</kbd>
+    ![](./media/image82a.png)
 
 2.  Select **RG4Sentinel**.
 
-    <kbd>![](./media/image83a.png)</kbd>
+    ![](./media/image83a.png)
 
 3.  In the resource group you should see an API Connection resource
     called **azuresentinel-Get-GeoFromIpAndTagIncident**, click on it.
 
-    <kbd>![](./media/image84a.png)</kbd>
+    ![](./media/image84a.png)
 
 4.  Click on **Edit API connection** under **General**.
 
-    <kbd>![](./media/image85a.png)</kbd>
+    ![](./media/image85a.png)
 
 5.  Click on **Authorize** and a new window will open to choose an
     account.
 
-    <kbd>![](./media/image86a.png)</kbd>
+    ![](./media/image86a.png)
 
 6.  Select the **your Office 365 Tenant credentials** that you are logged in
     with. If prompted to sign in, sign in with the credentials given on
     the **Resources tab** of your lab.
 
-    <kbd>![](./media/image87a.png)</kbd>
+    ![](./media/image87a.png)
 
 7.  Click **Save** once the authorization is successful.
 
-    <kbd>![](./media/image88a.png)</kbd>
+    ![](./media/image88a.png)
 
 8.  You should receive notification as shown in below image
 
-    <kbd>![](./media/image89a.png)</kbd>
+    ![](./media/image89a.png)
 
 Congratulations, you have completed Lab 1!
 
