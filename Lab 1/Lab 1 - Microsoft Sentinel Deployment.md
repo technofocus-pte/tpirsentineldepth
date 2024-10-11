@@ -88,8 +88,8 @@ automatically generated](./media/image3a.png)
 
 **Task 2 - Configure Permissions on the Subscription**
 
-1.  In the **Azure Portal** ```https://portal.azure.com``` search box
-    type ```subscriptions``` and then click **on Subscriptions**.
+1.  In the **Azure Portal** `https://portal.azure.com` search box
+    type `subscriptions` and then click **on Subscriptions**.
 
     ![A screenshot of a computer Description automatically
 generated](./media/image14a.png)
@@ -149,7 +149,7 @@ generated](./media/image22a.png)
     ![A screenshot of a computer Description automatically
 generated](./media/image23a.png)
 
-2.  In the search bar, type ```Microsoft.insight```,
+2.  In the search bar, type `Microsoft.insight`,
     select **Microsoft.insight** from the list below and click on
     Register.
 
@@ -164,11 +164,11 @@ generated](./media/image25a.png)
 
 4.  Repeat the steps to register the following Resource providers.
 
-    - ```Microsoft.web```
+    - `Microsoft.web`
 
-    - ```Microsoft.SecurityInsights```
+    - `Microsoft.SecurityInsights`
 
-    - ```Microsoft.Logic```
+    - `Microsoft.Logic`
 
     ![](./media/image26a.png)
 
@@ -176,7 +176,7 @@ generated](./media/image25a.png)
 account**
 
 1.  In the browser tab navigate
-    to ```https://portal.azure.com/#view/Microsoft_AAD_UsersAndTenants/UserManagementMenuBlade/~/AllUsers``` 
+    to `https://portal.azure.com/#view/Microsoft_AAD_UsersAndTenants/UserManagementMenuBlade/~/AllUsers` 
 
     ![A screenshot of a computer Description automatically
 generated](./media/image27a.png)
@@ -256,10 +256,10 @@ generated](./media/image30a.png)
 In this task we will see how to create a brand-new Microsoft Sentinel
 workspace.
 
-1. Navigate to the ```http://portal.azure.com``` and log in with the **MOD Administrator** credentials provided on the home tab of your lab
+1. Navigate to the `http://portal.azure.com` and log in with the **MOD Administrator** credentials provided on the home tab of your lab
 environment.
 
-2.  In the top search bar, type ```Microsoft Sentinel``` and click on
+2.  In the top search bar, type `Microsoft Sentinel` and click on
 **Microsoft Sentinel**.
 
     ![A screenshot of a computer Description automatically
@@ -281,11 +281,11 @@ follows:
 
     - Subscription: **Azure Pass - Sponsorship**
 
-    - Resource Group: click on **Create new**  ```RG4Sentinel```
+    - Resource Group: click on **Create new**  `RG4Sentinel`
 
     - Region: **West US**
 
-    - Workspace Name: ```swrkXXXXXXX``` \[Substitute **XXXXXXX** with random number]
+    - Workspace Name: `swrkXXXXXXX` \[Substitute **XXXXXXX** with random number]
 
     - Click **Review + create**.
 
@@ -320,8 +320,8 @@ generated](./media/image44.png)
 
 In this exercise you will deploy the Training Lab solution into your existing workspace. This will ingest pre-recorded data (~20 MBs) and create several other artifacts that will be used during the exercises.
 
-1. In the Azure Portal ```http://portal.azure.com```, go to the top search
-bar and type ```Microsoft Sentinel Training```. Select the **Microsoft
+1. In the Azure Portal `http://portal.azure.com`, go to the top search
+bar and type `Microsoft Sentinel Training`. Select the **Microsoft
 Sentinel Training Lab Solution (Preview)**, a Marketplace item.
 
     ![A screenshot of a computer Description automatically
@@ -334,7 +334,7 @@ generated](./media/image46.png)
 
 3. In the **Basics** tab, select **Azure pass - Sponsorship** as the
 **Subscription**, **RG4Sentinel** as the **Resource Group** and
-```SwrkXXXXXXX```  as the **Workspace**.
+`SwrkXXXXXXX`  as the **Workspace**.
 
     ![A screenshot of a computer Description automatically
 generated](./media/image47.png)
@@ -362,7 +362,7 @@ generated](./media/image50.png)
 
 **Task 8 - Explore the Microsoft Sentinel dashboard**
 
-1.  In the top search bar, type ```Microsoft Sentinel``` and click on
+1.  In the top search bar, type `Microsoft Sentinel` and click on
 **Microsoft Sentinel**.
 
     ![](./media/image51a.png)
@@ -410,7 +410,7 @@ In this task, we will create a Playbook that will be later used in the
 lab.
 
 1.  Open a new tab and browse to the Resource group page
-    - ```https://portal.azure.com/#view/HubsExtension/BrowseResourceGroups```
+    - `https://portal.azure.com/#view/HubsExtension/BrowseResourceGroups`
 
 2.  Click on the Resource group **RG4Sentinel**.
 
@@ -481,7 +481,7 @@ lab.
 
     - Resource group - **RG4Sentinel**
 
-    - Playbook name - ```customplaybook```
+    - Playbook name - `customplaybook`
 
     - Check the box near Enable diagnostics logs in log analytics.
 
@@ -503,12 +503,12 @@ lab.
  
     ![](./media/image75.png)
 
-20.	Search for ```Add comment to incident``` and select Add comment to incident (V3) (Preview).
+20.	Search for `Add comment to incident` and select Add comment to incident (V3) (Preview).
     ![](./media/image76.png)
 
-21.	In the Incident ARM ID, type ```@triggerBody()?['object']?['id']```
+21.	In the Incident ARM ID, type `@triggerBody()?['object']?['id']`
 
-22.	In the comment section type - ```This comment marks the successful run of our custom playbook.```
+22.	In the comment section type - `This comment marks the successful run of our custom playbook.`
 
 23.	If you do not see the step Connected to azuresentinel-customplaybook select Change Connection.
     ![](./media/image77.png)
@@ -526,7 +526,7 @@ lab.
 In this task, we will configure a Playbook that will be later used in
 the lab. This will allow the playbook to access Sentinel.
 
-1.  From the Azure Portal ```http://portal.azure.com``` click on the
+1.  From the Azure Portal `http://portal.azure.com` click on the
     Portal menu and select **Resource Groups**.
 
     ![](./media/image82a.png)
