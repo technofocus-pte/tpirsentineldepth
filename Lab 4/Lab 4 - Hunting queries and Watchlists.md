@@ -5,7 +5,7 @@
 Our security researchers shared the following article describing
 techniques used in the SolarWinds supply chain: [Identifying
 UNC2452-Related Techniques for
-ATT&CK](<`https://medium.com/mitre-attack/identifying-unc2452-related-techniques-9f7b6c7f3714>`)
+ATT&CK](https://medium.com/mitre-attack/identifying-unc2452-related-techniques-9f7b6c7f3714)
 
 Based on the article, our SOC leads understand that to be able to see
 the full picture of the attack campaign and spot anomalies on our data
@@ -15,7 +15,7 @@ and techniques described in this article.
 Review the above article that highlights MITRE attack techniques and the
 corresponding tools and methods. In this exercise, we will focus on
 T1098. To get a greater understanding of this technique, review this
-article: <`https://attack.mitre.org/techniques/T1098/`>
+article: `https://attack.mitre.org/techniques/T1098`
 
 ##  Prerequisites
 
