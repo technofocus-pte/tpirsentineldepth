@@ -660,8 +660,7 @@ any other affected hosts.
 
 ## Task 9 - Adding IOC to Threat Intelligence
 
-Now, we will add the IP address related to the incident to our list of
-IOCs, so we can capture any new occurrences of this IOC in our logs.
+Now, we will add the IP address related to the incident to our list of Indicators of Compromise (IOC), so we can capture any new occurrences of this IOC in our logs.
 
 1.  Click on **Incidents** under Threat management.
 
@@ -688,19 +687,21 @@ IOCs, so we can capture any new occurrences of this IOC in our logs.
 
     - Types - **ipv4-addr**
 
-    - Ipv4 address - **The address we copied in the previous step of this exercise.**
+    - Ipv4 address - `17.81.146.1` **(The address we copied in the previous step of this exercise.)**
 
-    - Description - `The address we copied in the previous step of this exercise.`
+    - Description - `Threat IP to be blocked.`
 
     - Name - `Threat1`
 
     <kbd>![ computer screen ](./media/image109.png)</kbd>
 
-6.  Enter the **Valid from** and **Valid until** dates and then click
+  6.  Enter the **Valid from** and **Valid until** dates and then click
     on **Apply**
 
-    <kbd>![ computer ](./media/image110.png)</kbd>
+<kbd>![ computer ](./media/image110.png)</kbd>
 
-    <kbd>![ computer ](./media/image111.png)</kbd>
+<kbd>![ computer ](./media/image111.png)</kbd>
 
-    <kbd>![](./media/image112.png)</kbd>
+<kbd>![](./media/image112.png)</kbd>
+
+We have successfully added an IP address for Indicators of Compromise (IoC).
