@@ -34,6 +34,7 @@ licensing.
     ![A screenshot of a computer Description automatically
 generated](./media/image3.png)
 
+
 4.  On the bottom right pane click on **Open connector page**
 
     ![A screenshot of a computer Description automatically
