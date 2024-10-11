@@ -2,20 +2,9 @@
 
 ## Objective
 
-Our security researchers shared the following article describing
-techniques used in the SolarWinds supply chain: [Identifying
-UNC2452-Related Techniques for
-ATT&CK](https://medium.com/mitre-attack/identifying-unc2452-related-techniques-9f7b6c7f3714)
-
-Based on the article, our SOC leads understand that to be able to see
-the full picture of the attack campaign and spot anomalies on our data
+Our SOC leads would like to understand and see the full picture of the attack campaign and spot anomalies on our data
 set, we need to run a proactive threat hunt based on the MITRE tactics
-and techniques described in this article.
-
-Review the above article that highlights MITRE attack techniques and the
-corresponding tools and methods. In this exercise, we will focus on
-T1098. To get a greater understanding of this technique, review this
-article: `https://attack.mitre.org/techniques/T1098`
+and techniques
 
 ##  Prerequisites
 
@@ -36,8 +25,7 @@ Microsoft Sentinel instance.
 
 2.  Select **SwrkXXXXXXX**.
 
-    ![A screenshot of a chat Description automatically
-generated](./media/image2.png)
+    ![a chat ](./media/image2.png)
 
 3.  Now click on **Hunting** and then select the **Queries** tab.
 
@@ -57,8 +45,7 @@ generated](./media/image2.png)
     of **Livestream results** and **bookmarks** created during the
     hunting process.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image5.png)
+    ![a computer ](./media/image5.png)
 ![alt text](image.png)
 
 6.  On the top action bar, shown in the above diagram, we can find
@@ -68,24 +55,20 @@ generated](./media/image5.png)
     get results faster, it helps to **filter** down the set of queries
     to the specific set you need to run.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image6.png)
+    ![a computer ](./media/image6.png)
 
 7.  Microsoft Sentinel provides many different attributes to filter down
     to just the queries you want to run. To filter by **MITRE
     technique**, click **Add filter**, select **Techniques.**
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image7.png)
+    ![a computer ](./media/image7.png)
 
 8.  In the **Techniques** value field, only
     select **T1098 -** **Account Manipulation** and click **Apply**.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image8.png)
+    ![a computer ](./media/image8.png)
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image9.png)
+    ![a computer ](./media/image9.png)
 
 9.  Review all the queries in the table using this technique. In this
     phase we can multi-select all of queries run them as a batch. To do
@@ -106,15 +89,13 @@ generated](./media/image9.png)
     credentials to legitimate OAuth Applications** query returns several
     results.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image11.png)
+    ![a computer ](./media/image11.png)
 
 12. Select this query and in the right pane press on **View query
     results**. This will navigate us to the log analytics screen to view
     the hunting query content and run it.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image12.png)
+    ![a computer ](./media/image12.png)
 
 
 13. On the **Logs** screen, once the hunting query finishes executing,
@@ -122,8 +103,7 @@ generated](./media/image12.png)
     columns. From high overview we can see that we have the
     actor **IP** and the **username** that run this operation.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image13.png)
+    ![a computer ](./media/image13.png)
 
 
 14. Expand one of the results and check the fields. As you can see, we
@@ -158,8 +138,7 @@ the bookmark, or attach the bookmark to an existing incident.
     left-hand side of the table. Click **Add bookmark** in the action
     menu just about the results table.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image15.png)
+    ![a computer ](./media/image15.png)
 
 2.  On the right-hand bookmark pane modify the values as following.
 
@@ -177,8 +156,7 @@ generated](./media/image15.png)
 
     - Click on **Create** at the bottom of the blade to create the bookmark.
 
-    ![A screenshot of a computer screen Description automatically
-generated](./media/image16.png)
+    ![a computer screen ](./media/image16.png)
 
     ![Screenshot](./media/image17.png)
 
@@ -193,19 +171,16 @@ in your search, detection rules, threat hunting, and response playbooks.
     search for `Microsoft Sentinel` and
     click on **Microsoft Sentinel**.
 
-    ![A screenshot of a computer service Description automatically
-generated](./media/image18.png)
+    ![a computer service ](./media/image18.png)
 
 2.  Select **SwrkXXXXXXX**.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image19.png)
+    ![a computer ](./media/image19.png)
 
 3.  Now click on **Watchlist** under Configurations, then click
     on **+ New**.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image20.png)
+    ![a computer ](./media/image20.png)
 
 4.  In the watchlist wizard enter the following and click ***Next:
     Source***:
@@ -217,30 +192,26 @@ generated](./media/image20.png)
 
     - Watchlist Alias: **PenTestIPaddresses**
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image21.png)
+    ![a computer ](./media/image21.png)
 
 5.  In the watchlist wizard, upload the
     file **C:\Labfiles\Lab4_IPAddresses.csv** from your desktop,
     under **SearchKey**, select **IPAddress**, review the **File
     Preview** and click **Next: Review and Create**.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image22.png)
+    ![a computer ](./media/image22.png)
 
 6.  On the Review + create tab, click on **Create** to finish the
     wizard.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image23.png)
+    ![a computer ](./media/image23.png)
 
     ![Screenshot](./media/image24.png)
 
 7.  You should be back on the **Watchlist** page, click
     on **Refresh** button to view the newly created watchlist.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image25.png)
+    ![a computer ](./media/image25.png)
 
 
 8.  The watchlist data takes about **3-5 minute** to be available in the
@@ -248,8 +219,7 @@ generated](./media/image25.png)
     click on **View in Log Analytics**. It might take a few minutes to
     show up.
 
-    ![A screenshot of a computer Description automatically
-generated](./media/image26.png)
+    ![a computer ](./media/image26.png)
 
 9.  On the Logs details, the Results should appear as shown in below
     image.
