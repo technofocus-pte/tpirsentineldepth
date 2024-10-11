@@ -39,6 +39,7 @@ generated](./media/image3.png)
 
     ![A screenshot of a computer Description automatically
 generated](./media/image4.png)
+![alt text](image.png)
 
 5.  Review the data received and confirm that the connector is already
     ingesting indicators.
