@@ -506,7 +506,7 @@ lab.
 20.	Search for ```Add comment to incident``` and select Add comment to incident (V3)</kbd> (Preview)</kbd>.
     <kbd>![](./media/image76.png)</kbd>
 
-21.	In the Incident ARM ID, type ```@triggerBody()</kbd>?['object']?['id']```
+21.	In the Incident ARM ID, type ```@triggerBody()?['object']?['id']```
 
 22.	In the comment section type - ```This comment marks the successful run of our custom playbook.```
 

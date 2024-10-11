@@ -289,8 +289,8 @@ generated](./media/image21.png)</kbd>
     <kbd>![A screenshot of a computer Description automatically
 generated](./media/image22.png)</kbd>
 
-3.  From the left menu choose the ***Microsoft Defender Threat
-    Intelligence (preview)</kbd>*** connector and click **Open Connector
+3.  From the left menu choose the **Microsoft Defender Threat
+    Intelligence (preview)** connector and click **Open Connector
     Page** at the bottom right.
 
     <kbd>![A screenshot of a computer Description automatically
