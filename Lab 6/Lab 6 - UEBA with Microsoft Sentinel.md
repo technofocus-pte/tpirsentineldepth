@@ -2,7 +2,7 @@
 
 ## Exercise 1: Explore UEBA with Microsoft Sentinel
 
-    ![program ](./media/image1.png)
+![program ](./media/image1.png)
 
 You are a Security Operations Analyst working at a company that
 implemented Microsoft Sentinel. Once you have connected your data
@@ -15,7 +15,7 @@ data, and also comes with built-in workbook templates to allow you to
 quickly gain insights across your data as soon as you connect a data
 source.
 
-### Task 1: Explore Entity Behavior
+## Task 1: Explore Entity Behavior
 
 In this task, you will explore Entity behavior analytics in Microsoft
 Sentinel.
@@ -39,36 +39,26 @@ Sentinel.
 
     ![](./media/image5.png)
 
-5.  On the next page, you should notice that **UEBA** is already enabled
-    as a part of the Deployment done in Lab 1.
-
-    ![Screenshot](./media/image6.png)
-
-    > **Note**: If UEBA is not On by default, turn it on from entity behavior
-    settings.
+5.  Click on the **Set EUBA** Button
 
     ![](./media/image7.png)
 
+6. Enable the Switch for **Turn on the UEBA feature** and select **Microsoft Entra ID** and then click on the **Apply** button.
+
     ![](./media/image8.png)
 
-6.  For the section **2. Sync Microsoft Sentinel with at least one of
-    the following directory services**, notice the Microsoft Entra ID is
-    already selected, click on the **Apply** button.
+7.  You should receive the Notification as shown in below image. 
 
     ![](./media/image9.png)
 
-    ![Screenshot](./media/image10.png)
+8. Select the **Azure Activity** check box and click on the **Apply** button.
 
-7.  You should receive the Notification as shown in below image. The
-    page will automatically be redirected to the Entity behaviour page.
+    ![](./media/image10.png)
 
-    ![Screenshot](./media/image11.png)
+9. You should receive the notification as shown in below image.
+    ![](./media/image11.png)
 
-8.  The confirms that the Entity behaviour is configured successfully.
-
-    ![](./media/image12.png)
-
-### Task 2: Confirm and review Anomalies rules
+## Task 2: Confirm and review Anomalies rules
 
 In this task, we will confirm if Anomalies analytics rules are enabled.
 
@@ -132,13 +122,17 @@ In this task, we will confirm if Anomalies analytics rules are enabled.
 
     ![Screenshot](./media/image24.png)
 
+
 13. If the **FLGT Analytic rule** still shows **Disabled**, then
     right-click on it and select **Enable** option.
 
     ![](./media/image25.png)
 
+
     ![Screenshot](./media/image26.png)
+
 
 14. Now it should be enabled.
 
     ![](./media/image27.png)
+

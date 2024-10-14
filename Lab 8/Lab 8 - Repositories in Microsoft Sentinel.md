@@ -24,6 +24,7 @@ generated](./media/image2.png)
     earlier.
 
     ![](./media/image3.png)
+    ![alt text](image.png)
 
 4.  Select the **Export** from the toolbar. **Hint:** You might need to
     select the ellipsis icon **(...)** to see it.
@@ -82,8 +83,8 @@ generated](./media/image11.png)
     ![A screenshot of a computer Description automatically
 generated](./media/image12.png)
 
-5.  On the **Create a project to get started** page, enter **My Sentinel
-    Content** and then select **Create project**.
+5.  On the **Create a project to get started** page, enter `My Sentinel
+    Content` and then select **Create project**.
 
     ![A screenshot of a computer Description automatically
 generated](./media/image13.png)
