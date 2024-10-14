@@ -6,7 +6,7 @@ detection.
 
 ## Exercise 1 - Exploring the Microsoft Defender Threat Intelligence (Preview) connector
 
-### Task 1 -- Enabling the Microsoft Defender Threat Intelligence (Preview) connector
+### Task 1 - Enabling the Microsoft Defender Threat Intelligence (Preview) connector
 
 This connector is currently in preview and ingests Microsoft Threat
 Intelligence indicators automatically into the
@@ -88,7 +88,6 @@ Intelligence menu on the left navigation menu.
 
 2.  Microsoft Sentinel built-in tables have a predefined schema, to be able to see  the **ThreatIntelligenceIndicator** schema, run the following query:
 
-    
     `ThreatIntelligenceIndicator
     | getschema`
 
@@ -124,20 +123,19 @@ to correlate and detect interaction with this IOC.
 2.  On the **New indicator** dialog provide the below details and then
     click on **Apply** button
 
-    - Types -- **url**
+    - Types - **url**
 
     - URL - `http://phishing.com`
 
-    - Tags - `Incident 4326`
+    - Tags - Click on + then type `Incident 4326` click on **Apply**
 
-    - Thread types - `malicious-activity`
+    - Thread types - Click on + then type `malicious-activity` on **Apply**
 
-    - Description -- `this URL is found in Incident
-      4326`
+    - Description - `this URL is found in Incident       4326`
 
-    - Name -- **url indicator**
+    - Name - `url indicator`
 
-    - Confidence level -- 80
+    - Confidence level - uncheck the **Is null** checkbox and then set the vaule to **80**
 
     - Set the **Valid from** as today date
 
@@ -156,10 +154,9 @@ to correlate and detect interaction with this IOC.
     can validate it by opening the **Logs** menu and run the query
     below.
 
-    > **Note** -- It can take about 5 mins to have the result shown.
+    > **Note** - It can take about 5 mins to have the result shown.
 
-    `ThreatIntelligenceIndicator
-    | search "http://phishing.com"`
+    `ThreatIntelligenceIndicator | search "http://phishing.com"`
 
     ![](./media/image17.png)
 
@@ -202,6 +199,7 @@ to correlate and detect interaction with this IOC.
 
     ![](./media/image23.png)
 
+
 2.  Click on Add filter and then choose **Rule Type** filter and
     select **Threat Intelligence**.
 
@@ -216,6 +214,7 @@ to correlate and detect interaction with this IOC.
     rule.
 
     ![](./media/image26.png)
+    ![alt text](image.png)
 
 4.  Select the rule template and notice the different data sources that
     are supported (at the time of writing, these are CEF, Syslog and
@@ -233,7 +232,7 @@ to correlate and detect interaction with this IOC.
 
     ![Screenshot](./media/image30.png)
 
-### Task 7 -- Explore and visualize Threat Intelligence workbook
+### Task 7 - Explore and visualize Threat Intelligence workbook
 
 1.  While still on the **Microsoft Sentinel** page, click
     on **Workbooks** under **Threat management** and then click on **Add
@@ -279,9 +278,9 @@ to correlate and detect interaction with this IOC.
 
     ![Screenshot](./media/image38.png)
 
-## Exercise 2 -- Exploring the Microsoft Sentinel Content hub.
+## Exercise 2 - Exploring the Microsoft Sentinel Content hub.
 
-### Task 1 -- Overview of Microsoft Sentinel Content hub
+### Task 1 - Overview of Microsoft Sentinel Content hub
 
 1.  On the Azure
     Portal `http://portal.azure.com`,
@@ -350,11 +349,11 @@ to correlate and detect interaction with this IOC.
 4.  On the **Create Microsoft Sentinel Solution for Dynamics 365 CE Apps
     (Preview)** page provide the below details.
 
-    a\. Subscription -- **Azure Pass -- Sponsorship**
+    a\. Subscription - **Azure Pass - Sponsorship**
 
-    b\. Resource group -- **RG4Sentinel**
+    b\. Resource group - **RG4Sentinel**
 
-    c\. Workspace -- **SwrkXXXXXX**
+    c\. Workspace - **SwrkXXXXXX**
 
     ![](./media/image50.png)
 
