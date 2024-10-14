@@ -214,7 +214,6 @@ to correlate and detect interaction with this IOC.
     rule.
 
     ![](./media/image26.png)
-    ![alt text](image.png)
 
 4.  Select the rule template and notice the different data sources that
     are supported (at the time of writing, these are CEF, Syslog and
@@ -297,7 +296,7 @@ to correlate and detect interaction with this IOC.
 
     ![](./media/image41.png)
 
-4.  In the search bar, type `Cloudflare`.
+4.  In the search bar, type `Cloudflare`
     You will see a single result corresponding to Cloudflare solution.
     You could also search using the filtering options at the top.
 
@@ -309,7 +308,7 @@ to correlate and detect interaction with this IOC.
     who supports it. Click **Install**.
 
     ![](./media/image43.png)
-
+ 
     ![](./media/image44.png)
 
 6.  Click on the **Manage** button.
@@ -372,7 +371,7 @@ to correlate and detect interaction with this IOC.
     ![](./media/image53.png)
 
 8.  On the **Hunting Queries** tab, notice the Hunting Queries included
-    in the solution. Click **Next: Review + create**.
+    in the solution. Click **Review + create**.
 
     ![](./media/image54.png)
 
@@ -401,10 +400,7 @@ to correlate and detect interaction with this IOC.
     real-world environment, you would need to create them in order to
     use them.
 
-4.  Navigate to **Workbooks** under Threat Management. Search
-    for `Dynamics` Like the analytics
-    rules the workbook exists as a template. This should be empty unless
-    you have enabled the Dynamics 365 connector.
+4.  Navigate to **Workbooks** under Threat Management.  Select **Templates** search for `Dynamics` Like the analytics rules the workbook exists as a template. This should be empty unless you have enabled the Dynamics 365 connector.
 
     ![](./media/image59.png)
 
@@ -420,6 +416,7 @@ to correlate and detect interaction with this IOC.
 
     ![](./media/image61.png)
 
-Congratulations, you have completed Lab 5!
+
+**Congratulations!!!**, you have completed Lab 5!
 
 
